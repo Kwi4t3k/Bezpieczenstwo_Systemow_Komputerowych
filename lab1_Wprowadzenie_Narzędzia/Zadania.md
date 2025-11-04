@@ -1,20 +1,30 @@
 0.1 Wyświetl wszystkie informacje użytkownika Alice.
 
+curl -X 'GET' 'http://127.0.0.1:5000/user/alice' -H accept:'*/*' | jq
+
 ![[Pasted image 20251104195338.png]]
 
 0.2 Wyświetl imię i nazwisko użytkownika Alice. 
+
+curl -X 'GET' 'http://127.0.0.1:5000/user/alice' -H accept:'*/*' | jq -r ".name"
 
 ![[Pasted image 20251104195527.png]]
 
 0.3 Wyświetl adres e-mail użytkownika Bob. 
 
+curl -X 'GET' 'http://127.0.0.1:5000/user/bob' -H accept:'*/*' | jq -r ".email"
+
 ![[Pasted image 20251104195604.png]]
 
 0.4 Wyświetl wiek użytkownika Alice. 
 
+curl -X 'GET' 'http://127.0.0.1:5000/user/alice' -H accept:'*/*' | jq -r ".age"
+
 ![[Pasted image 20251104195628.png]]
 
 0.5 Wyświetl nazwę miasta, w którym mieszka użytkownik Bob. 
+
+curl -X 'GET' 'http://127.0.0.1:5000/user/bob' -H accept:'*/*' | jq -r ".city"
 
 ![[Pasted image 20251104195649.png]]
 
