@@ -20,11 +20,17 @@
 
 ![[Pasted image 20251109155757.png]]
 
-
+![[Pasted image 20251109173537.png]]
+![[Pasted image 20251109173601.png]]
+![[Pasted image 20251109173621.png]]
 
 ---
 
 ![[Pasted image 20251109155809.png]]
+
+
+
+---
 
 ![[Pasted image 20251109155820.png]]
 

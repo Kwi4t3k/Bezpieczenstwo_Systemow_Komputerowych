@@ -32,6 +32,18 @@
               "icon": "lucide-file-text",
               "title": "bezpieczenstwo_lab2_13_10"
             }
+          },
+          {
+            "id": "82d546072969ceb4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "dodatkowe/OdNatalki.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "OdNatalki"
+            }
           }
         ]
       }
@@ -180,18 +192,19 @@
   },
   "active": "edf1ee1a06d6e39e",
   "lastOpenFiles": [
+    "dodatkowe/OdNatalki.pdf",
     "lab2_Funkcje_haszujące/bezpieczenstwo_lab2_13_10.pdf",
-    "zdjecia/Pasted image 20251109162144.png",
     "lab2_Funkcje_haszujące/Zadania.md",
+    "Pasted image 20251109173621.png",
+    "Pasted image 20251109173601.png",
+    "Pasted image 20251109173537.png",
+    "zdjecia/Pasted image 20251109162144.png",
     "zdjecia/Pasted image 20251109161657.png",
     "zdjecia/Pasted image 20251109160945.png",
     "zdjecia/Pasted image 20251109160807.png",
     "zdjecia/Pasted image 20251109160339.png",
     "zdjecia/Pasted image 20251109155719.png",
     "zdjecia/Pasted image 20251109155940.png",
-    "zdjecia/Pasted image 20251109155932.png",
-    "zdjecia/Pasted image 20251109155923.png",
-    "zdjecia/Pasted image 20251109155916.png",
     "lab2_Funkcje_haszujące/serwer.txt",
     "lab2_Funkcje_haszujące/polecenia_lab2_podman.txt",
     "lab2_Funkcje_haszujące/hashing.pdf",
@@ -201,7 +214,6 @@
     "lab1_Wprowadzenie_Narzędzia/tools.pdf",
     "lab1_Wprowadzenie_Narzędzia/Niepotwierdzony 29158.crdownload",
     "lab2_Funkcje_haszujące/Do kolosa.md",
-    "dodatkowe/OdNatalki.pdf",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
     "lab1_Wprowadzenie_Narzędzia/Do kolosa.md"
   ]
