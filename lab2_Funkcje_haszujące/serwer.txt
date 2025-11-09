@@ -1,0 +1,9 @@
+http://10.72.144.87:20001 - hashing-md5-ex1
+
+http://10.72.144.87:20011 - hashing-sha256-ex1
+
+http://10.72.144.87:20021 - hashing-sha-512-ex1
+
+http://10.72.144.87:20031 - hashing-argon-ex1
+
+http://10.72.144.87:20041 - hashing-bcrypt-ex1

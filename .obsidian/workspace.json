@@ -8,17 +8,29 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9a00919a27a662ec",
+            "id": "edf1ee1a06d6e39e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lab1_Wprowadzenie_Narzędzia/Zadania.md",
+                "file": "lab2_Funkcje_haszujące/Zadania.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Zadania"
+            }
+          },
+          {
+            "id": "3d5d17dd1da0967a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "lab2_Funkcje_haszujące/bezpieczenstwo_lab2_13_10.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "bezpieczenstwo_lab2_13_10"
             }
           }
         ]
@@ -166,17 +178,31 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "9a00919a27a662ec",
+  "active": "edf1ee1a06d6e39e",
   "lastOpenFiles": [
-    "lab1_Wprowadzenie_Narzędzia/bezpieczenstwo_lab1_6_10.pdf",
-    "lab1_Wprowadzenie_Narzędzia/Komendy.md",
-    "zdjecia/Pasted image 20251104195338.png",
+    "lab2_Funkcje_haszujące/bezpieczenstwo_lab2_13_10.pdf",
+    "zdjecia/Pasted image 20251109162144.png",
+    "lab2_Funkcje_haszujące/Zadania.md",
+    "zdjecia/Pasted image 20251109161657.png",
+    "zdjecia/Pasted image 20251109160945.png",
+    "zdjecia/Pasted image 20251109160807.png",
+    "zdjecia/Pasted image 20251109160339.png",
+    "zdjecia/Pasted image 20251109155719.png",
+    "zdjecia/Pasted image 20251109155940.png",
+    "zdjecia/Pasted image 20251109155932.png",
+    "zdjecia/Pasted image 20251109155923.png",
+    "zdjecia/Pasted image 20251109155916.png",
+    "lab2_Funkcje_haszujące/serwer.txt",
+    "lab2_Funkcje_haszujące/polecenia_lab2_podman.txt",
+    "lab2_Funkcje_haszujące/hashing.pdf",
+    "lab2_Funkcje_haszujące/Niepotwierdzony 440619.crdownload",
+    "lab1_Wprowadzenie_Narzędzia/serwer.txt",
+    "lab1_Wprowadzenie_Narzędzia/polecenia.txt",
+    "lab1_Wprowadzenie_Narzędzia/tools.pdf",
+    "lab1_Wprowadzenie_Narzędzia/Niepotwierdzony 29158.crdownload",
+    "lab2_Funkcje_haszujące/Do kolosa.md",
+    "dodatkowe/OdNatalki.pdf",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
-    "zdjecia/Pasted image 20251104195649.png",
-    "zdjecia",
-    "zdjecia/Pasted image 20251104195628.png",
-    "zdjecia/Pasted image 20251104195604.png",
-    "zdjecia/Pasted image 20251104195527.png",
-    "lab2_Funkcje_haszujące/bezpieczenstwo_lab2_13_10.pdf"
+    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md"
   ]
 }

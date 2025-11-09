@@ -1,0 +1,11 @@
+docker run -p 5000:5000 --name curljq mazurkatarzyna/curl-jq-server:latest
+
+docker ps
+
+docker stop curljq
+
+docker logs curljq
+
+docker system prune -af
+docker volume prune -af
+docker network prune -a

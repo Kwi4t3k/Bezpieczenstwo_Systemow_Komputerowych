@@ -1,0 +1,20 @@
+podman run -dp 10001:10001 --name hashingmd5ex1 docker.io/mazurkatarzyna/hashing-md5-ex1:latest
+podman run -dp 10002:10002 --name hashingsha256ex1 docker.io/mazurkatarzyna/hashing-sha256-ex1:latest
+podman run -dp 10003:10003 --name hashingsha512ex1 docker.io/mazurkatarzyna/hashing-sha-512-ex1:latest
+podman run -dp 10004:10004 --name hashingargonex1 docker.io/mazurkatarzyna/hashing-argon-ex1:latest
+podman run -dp 10005:10005 --name hashingbcryptex1 docker.io/mazurkatarzyna/hashing-bcrypt-ex1:latest
+
+podman run -it docker.io/mazurkatarzyna/openssl-332-ubuntu:latest
+podman run -it docker.io/mazurkatarzyna/hashing-bcrypt-ex2:latest
+podman run -it docker.io/mazurkatarzyna/hash-identifier:latest
+
+podman ps
+
+podman stop hashingmd5ex1
+
+podman logs hashingmd5ex1
+
+podman system prune -af
+podman volume prune -af
+podman network prune -a
+
