@@ -83,4 +83,3 @@ DOKOŃCZYĆ
 ![[Pasted image 20251109155932.png]]
 
 ![[Pasted image 20251109155940.png]]
-
