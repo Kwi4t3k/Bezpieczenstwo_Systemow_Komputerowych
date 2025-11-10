@@ -11,12 +11,14 @@
             "id": "edf1ee1a06d6e39e",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "zdjecia/Pasted image 20251109173621.png"
+                "file": "lab2_Funkcje_haszujące/Zadania.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251109173621"
+              "icon": "lucide-file",
+              "title": "Zadania"
             }
           },
           {
@@ -188,21 +190,21 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "4a34b86ef78c61f4",
+  "active": "edf1ee1a06d6e39e",
   "lastOpenFiles": [
-    "lab2_Funkcje_haszujące/Zadania.md",
     "dodatkowe/OdNatalki.pdf",
     "lab2_Funkcje_haszujące/bezpieczenstwo_lab2_13_10.pdf",
-    "zdjecia/Pasted image 20251109173621.png",
-    "zdjecia/Pasted image 20251109173601.png",
-    "zdjecia/Pasted image 20251109173537.png",
-    "zdjecia/Pasted image 20251109162144.png",
-    "zdjecia/Pasted image 20251109161657.png",
-    "zdjecia/Pasted image 20251109160945.png",
-    "zdjecia/Pasted image 20251109160807.png",
-    "zdjecia/Pasted image 20251109160339.png",
-    "zdjecia/Pasted image 20251109155719.png",
-    "zdjecia/Pasted image 20251109155940.png",
+    "lab2_Funkcje_haszujące/Zadania.md",
+    "Pasted image 20251110114038.png",
+    "Pasted image 20251110114024.png",
+    "Pasted image 20251110114012.png",
+    "Pasted image 20251110113708.png",
+    "Pasted image 20251110113651.png",
+    "Pasted image 20251110113640.png",
+    "Pasted image 20251110112854.png",
+    "Pasted image 20251110112842.png",
+    "Pasted image 20251110112756.png",
+    "Pasted image 20251110112732.png",
     "lab2_Funkcje_haszujące/serwer.txt",
     "lab2_Funkcje_haszujące/polecenia_lab2_podman.txt",
     "lab2_Funkcje_haszujące/hashing.pdf",
