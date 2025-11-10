@@ -8,33 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "edf1ee1a06d6e39e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "lab2_Funkcje_haszujące/Zadania.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Zadania"
-            }
-          },
-          {
-            "id": "3d5d17dd1da0967a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "lab2_Funkcje_haszujące/bezpieczenstwo_lab2_13_10.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "bezpieczenstwo_lab2_13_10"
-            }
-          },
-          {
-            "id": "82d546072969ceb4",
+            "id": "be200e52585d35ae",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -44,8 +18,35 @@
               "icon": "lucide-file-text",
               "title": "OdNatalki"
             }
+          },
+          {
+            "id": "82d546072969ceb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lab3_Szyfrowanie_Symetryczne/Zadania.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Zadania"
+            }
+          },
+          {
+            "id": "0be7c002c316c4d9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "lab3_Szyfrowanie_Symetryczne/bezpieczenstwo_lab3_20_10.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "bezpieczenstwo_lab3_20_10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 263.5
   },
   "right": {
     "id": "4890cb0c96347ede",
@@ -190,31 +191,33 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "edf1ee1a06d6e39e",
+  "active": "4a34b86ef78c61f4",
   "lastOpenFiles": [
-    "zdjecia/Pasted image 20251110114038.png",
-    "lab2_Funkcje_haszujące/Zadania.md",
+    "zdjecia/Pasted image 20251110154538.png",
+    "lab3_Szyfrowanie_Symetryczne/bezpieczenstwo_lab3_20_10.pdf",
+    "lab3_Szyfrowanie_Symetryczne/Zadania.md",
+    "zdjecia/Pasted image 20251110153746.png",
+    "zdjecia/Pasted image 20251110152915.png",
     "dodatkowe/OdNatalki.pdf",
+    "zdjecia/Pasted image 20251110150941.png",
+    "zdjecia/Pasted image 20251110143616.png",
+    "Pasted image 20251110141508.png",
+    "zdjecia/Pasted image 20251110140740.png",
     "lab2_Funkcje_haszujące/bezpieczenstwo_lab2_13_10.pdf",
-    "zdjecia/Pasted image 20251110114024.png",
-    "zdjecia/Pasted image 20251110114012.png",
-    "zdjecia/Pasted image 20251110113708.png",
-    "zdjecia/Pasted image 20251110113651.png",
-    "zdjecia/Pasted image 20251110113640.png",
-    "zdjecia/Pasted image 20251110112854.png",
-    "zdjecia/Pasted image 20251110112842.png",
-    "zdjecia/Pasted image 20251110112756.png",
-    "zdjecia/Pasted image 20251110112732.png",
-    "lab2_Funkcje_haszujące/serwer.txt",
-    "lab2_Funkcje_haszujące/polecenia_lab2_podman.txt",
-    "lab2_Funkcje_haszujące/hashing.pdf",
-    "lab2_Funkcje_haszujące/Niepotwierdzony 440619.crdownload",
-    "lab1_Wprowadzenie_Narzędzia/serwer.txt",
-    "lab1_Wprowadzenie_Narzędzia/polecenia.txt",
-    "lab1_Wprowadzenie_Narzędzia/tools.pdf",
-    "lab1_Wprowadzenie_Narzędzia/Niepotwierdzony 29158.crdownload",
-    "lab2_Funkcje_haszujące/Do kolosa.md",
+    "lab2_Funkcje_haszujące/Zadania.md",
+    "Pasted image 20251110134850.png",
+    "zdjecia/Pasted image 20251110134327.png",
+    "zdjecia/Pasted image 20251110134320.png",
+    "zdjecia/Pasted image 20251110134309.png",
+    "lab3_Szyfrowanie_Symetryczne/symmetric-enc-exercises (1).pdf",
+    "lab3_Szyfrowanie_Symetryczne/Niepotwierdzony 868454.crdownload",
+    "lab3_Szyfrowanie_Symetryczne/lab3-docker.txt",
+    "lab3_Szyfrowanie_Symetryczne/zad2.enc.txt",
+    "lab3_Szyfrowanie_Symetryczne/key2.txt",
+    "lab3_Szyfrowanie_Symetryczne/iv27.txt",
+    "lab3_Szyfrowanie_Symetryczne/zad27.enc.txt",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
-    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md"
+    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
+    "lab2_Funkcje_haszujące/Do kolosa.md"
   ]
 }
