@@ -28,8 +28,8 @@ Nie trzeba w żaden sposób edytować plików
 ---
 
 ![[Pasted image 20251110191837.png]]
-### Notatka
-Nie ma id sesji?
+
+DOKOŃCZYĆ
 
 ![[Pasted image 20251111144816.png]]
 ![[Pasted image 20251111144834.png]]
@@ -38,8 +38,7 @@ Nie ma id sesji?
 
 ![[Pasted image 20251110191850.png]]
 
-### Notatka 
-Nie ma id sesji
+DOKOŃCZYĆ
 
 ![[Pasted image 20251111145352.png]]
 ![[Pasted image 20251111145404.png]]
@@ -50,8 +49,7 @@ Nie ma id sesji
 ![[Pasted image 20251110191902.png]]
 ![[Pasted image 20251110191909.png]]
 
-### Notatka
-Nie ma danych z serwera
+DOKOŃCZYĆ
 
 ## Przykładowy przebieg rozwiązywania zadania z chata
 
