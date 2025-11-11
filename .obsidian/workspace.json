@@ -32,18 +32,6 @@
               "icon": "lucide-file",
               "title": "Zadania"
             }
-          },
-          {
-            "id": "f4302c920a4623d2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "lab4_Szyfrowanie_Asymetryczne/bezpieczeństwo_lab_27_10.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "bezpieczeństwo_lab_27_10"
-            }
           }
         ],
         "currentTab": 1
@@ -193,33 +181,32 @@
   },
   "active": "6ab07c3059d6aac3",
   "lastOpenFiles": [
-    "zdjecia/Pasted image 20251111155358.png",
+    "zdjecia/Pasted image 20251111213007.png",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
-    "zdjecia/Pasted image 20251111160535.png",
-    "zdjecia/Pasted image 20251111160322.png",
-    "zdjecia/Pasted image 20251111160144.png",
-    "zdjecia/Pasted image 20251111160122.png",
-    "zdjecia/Pasted image 20251111160038.png",
-    "zdjecia/Pasted image 20251111155926.png",
-    "zdjecia/Pasted image 20251111155859.png",
-    "zdjecia/Pasted image 20251111155811.png",
-    "zdjecia/Pasted image 20251111155619.png",
-    "zdjecia/Pasted image 20251111155604.png",
-    "lab3_Szyfrowanie_Symetryczne/Zadania.md",
+    "zdjecia/Pasted image 20251111212948.png",
+    "zdjecia/Pasted image 20251111212944.png",
     "dodatkowe/OdNatalki.pdf",
+    "zdjecia/Pasted image 20251111212048.png",
     "lab4_Szyfrowanie_Asymetryczne/bezpieczeństwo_lab_27_10.pdf",
+    "lab2_Funkcje_haszujące/Zadania.md",
+    "lab2_Funkcje_haszujące/hashing.pdf",
+    "lab3_Szyfrowanie_Symetryczne/symmetric-enc-exercises.pdf",
+    "lab2_Funkcje_haszujące/bezpieczenstwo_lab2_13_10.pdf",
+    "lab1_Wprowadzenie_Narzędzia/Zadania.md",
+    "zdjecia/Pasted image 20251111205509.png",
+    "zdjecia/Pasted image 20251111205456.png",
+    "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
+    "zdjecia/Pasted image 20251111200927.png",
+    "zdjecia/Pasted image 20251111200913.png",
+    "zdjecia/Pasted image 20251111200526.png",
+    "lab3_Szyfrowanie_Symetryczne/Zadania.md",
     "lab5_Łamanie_haseł/Zadania.md",
     "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md",
-    "lab3_Szyfrowanie_Symetryczne/symmetric-enc-exercises.pdf",
-    "lab2_Funkcje_haszujące/Zadania.md",
-    "lab2_Funkcje_haszujące/bezpieczenstwo_lab2_13_10.pdf",
     "lab3_Szyfrowanie_Symetryczne/bezpieczenstwo_lab3_20_10.pdf",
     "lab3_Szyfrowanie_Symetryczne/symmetric-enc-exercises (1).pdf",
     "lab3_Szyfrowanie_Symetryczne/Niepotwierdzony 868454.crdownload",
     "lab3_Szyfrowanie_Symetryczne/lab3-docker.txt",
     "lab3_Szyfrowanie_Symetryczne/zad2.enc.txt",
-    "lab3_Szyfrowanie_Symetryczne/key2.txt",
-    "lab1_Wprowadzenie_Narzędzia/Zadania.md",
     "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
     "lab2_Funkcje_haszujące/Do kolosa.md"
   ]

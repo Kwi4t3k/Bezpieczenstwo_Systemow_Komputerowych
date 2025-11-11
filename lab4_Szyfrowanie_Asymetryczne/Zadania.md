@@ -29,27 +29,28 @@ Nie trzeba w żaden sposób edytować plików
 
 ![[Pasted image 20251110191837.png]]
 
-DOKOŃCZYĆ
-
-![[Pasted image 20251111144816.png]]
-![[Pasted image 20251111144834.png]]
+![[Pasted image 20251111200412.png]]
+![[Pasted image 20251111200424.png]]
+![[Pasted image 20251111200448.png]]
+![[Pasted image 20251111200511.png]]
+![[Pasted image 20251111200526.png]]
 
 ---
 
 ![[Pasted image 20251110191850.png]]
 
-DOKOŃCZYĆ
-
-![[Pasted image 20251111145352.png]]
-![[Pasted image 20251111145404.png]]
-![[Pasted image 20251111145417.png]]
+![[Pasted image 20251111200913.png]]
+![[Pasted image 20251111200927.png]]
 
 ---
 
 ![[Pasted image 20251110191902.png]]
 ![[Pasted image 20251110191909.png]]
 
-DOKOŃCZYĆ
+DOKOŃCZYĆ bo idk czemu nie działa
+
+![[Pasted image 20251111205456.png]]
+![[Pasted image 20251111205509.png]]
 
 ## Przykładowy przebieg rozwiązywania zadania z chata
 
@@ -487,6 +488,10 @@ curl -X POST http://127.0.0.1:3007/submit \
 
 ![[Pasted image 20251110191930.png]]
 ![[Pasted image 20251110191944.png]]
+
+![[Pasted image 20251111212048.png]]
+![[Pasted image 20251111212948.png]]
+![[Pasted image 20251111213007.png]]
 
 ---
 
