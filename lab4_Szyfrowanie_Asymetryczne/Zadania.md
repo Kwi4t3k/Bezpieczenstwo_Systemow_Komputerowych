@@ -497,6 +497,166 @@ curl -X POST http://127.0.0.1:3007/submit \
 
 ![[Pasted image 20251110191956.png]]
 
+![[Pasted image 20251112110225.png]]
+![[Pasted image 20251112110238.png]]
+![[Pasted image 20251112105709.png]]
+![[Pasted image 20251112110342.png]]
+![[Pasted image 20251112110353.png]]
+![[Pasted image 20251112110403.png]]
+![[Pasted image 20251112110448.png]]
+![[Pasted image 20251112110458.png]]
+![[Pasted image 20251112110513.png]]
+![[Pasted image 20251112105926.png]]
+
+DOKOŃCZYĆ - samą notatkę bo wszystko działa
+## 🧰 **KROK 1 — uruchomienie serwera**
+
+Uruchom kontener (jeden z poniższych, w zależności od tego czy masz Docker Hub czy GHCR):
+
+```bash
+docker run -p 3009:3009 --name ex9 docker.io/mazurkatarzyna/asymmetric-enc-ex9:latest
+```
+
+lub
+
+```bash
+docker run -p 3009:3009 --name ex9 ghcr.io/mazurkatarzynaumcs/asymmetric-enc-ex9:latest
+```
+
+---
+
+## 🧠 **KROK 2 — pobranie danych od serwera**
+
+Pobierasz klucz prywatny (`private_key.pem`), identyfikator sesji (`session_id`) i słowo (`word`).
+
+```bash
+curl -i -X GET 'http://127.0.0.1:3009/sign' \
+     -H 'accept: application/json' \
+     -o response.pem > headers.txt
+```
+
+Teraz zobacz nagłówki, żeby poznać ID sesji i słowo:
+
+```bash
+cat headers.txt | grep -E 'Session|Word'
+```
+
+🔹 W nagłówkach znajdziesz:
+
+- `X-Session-Id:` → identyfikator sesji
+    
+- `X-Word:` → słowo do podpisania
+    
+
+🔹 A w pliku `response.pem` masz:
+
+- Twój klucz prywatny RSA w formacie PEM (`-----BEGIN PRIVATE KEY-----` …)
+    
+
+---
+
+## 💾 **KROK 3 — przygotowanie plików**
+
+Zapisz słowo do pliku:
+
+```bash
+echo -n "TUTAJ_WSTAW_SŁOWO" > word.txt
+```
+
+Sprawdź:
+
+```bash
+cat word.txt
+```
+
+---
+
+## ✍️ **KROK 4 — utworzenie skrótu SHA-256**
+
+Tworzymy skrót SHA-256 (binarne dane):
+
+```bash
+openssl dgst -sha256 -binary -out word.sha256 word.txt
+```
+
+Sprawdź długość (powinno być 32 bajty):
+
+```bash
+ls -l word.sha256
+```
+
+---
+
+## 🔐 **KROK 5 — podpisanie słowa RSA-PSS**
+
+Użyj klucza prywatnego do podpisania skrótu:
+
+```bash
+openssl pkeyutl -sign -in word.sha256 -inkey response.pem \
+    -pkeyopt digest:sha256 \
+    -pkeyopt rsa_padding_mode:pss \
+    -pkeyopt rsa_pss_saltlen:32 \
+    -out signature.bin
+```
+
+Teraz zakoduj podpis do base64 (żeby można go było wysłać HTTP-em):
+
+```bash
+base64 signature.bin > signature.b64
+```
+
+Sprawdź zawartość:
+
+```bash
+cat signature.b64
+```
+
+---
+
+## 🚀 **KROK 6 — wysłanie podpisu do serwera**
+
+Użyj `curl` do przesłania podpisu (jako base64) i ID sesji:
+
+```bash
+curl -X POST 'http://127.0.0.1:3009/submit' \
+     -H 'accept: application/json' \
+     -H 'Content-Type: application/json' \
+     -d '{
+           "session_id": "TU_WSTAW_SESSION_ID",
+           "signature_b64": "TU_WKLEJ_ZAWARTOŚĆ_signature.b64"
+         }'
+```
+
+---
+
+## ✅ **KROK 7 — wynik**
+
+Serwer powinien odpowiedzieć czymś w stylu:
+
+```
+{"result": "OK"} 
+```
+
+albo
+
+```
+{"result": "Signature verified successfully"}
+```
+
+Jeśli zobaczysz błąd, np. `invalid signature` — sprawdź:
+
+- czy **użyłeś tego samego słowa (X-Word)**, które dał serwer,
+    
+- czy padding PSS ma `rsa_pss_saltlen:32`,
+    
+- czy nie dodałeś przypadkowo `\n` w `word.txt` (używaj `echo -n`!).
+    
+
+---
+
+Chcesz, żebym przygotował gotowy **skrypt Bash** (np. `sign_task.sh`), który automatycznie wykona wszystkie kroki (GET, podpis, POST)?
+
+
 ---
 
 ![[Pasted image 20251110192007.png]]
