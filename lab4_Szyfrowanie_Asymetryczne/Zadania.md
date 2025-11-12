@@ -496,19 +496,6 @@ curl -X POST http://127.0.0.1:3007/submit \
 ---
 
 ![[Pasted image 20251110191956.png]]
-
-![[Pasted image 20251112110225.png]]
-![[Pasted image 20251112110238.png]]
-![[Pasted image 20251112105709.png]]
-![[Pasted image 20251112110342.png]]
-![[Pasted image 20251112110353.png]]
-![[Pasted image 20251112110403.png]]
-![[Pasted image 20251112110448.png]]
-![[Pasted image 20251112110458.png]]
-![[Pasted image 20251112110513.png]]
-![[Pasted image 20251112105926.png]]
-
-DOKOŃCZYĆ - samą notatkę bo wszystko działa
 ## 🧰 **KROK 1 — uruchomienie serwera**
 
 Uruchom kontener (jeden z poniższych, w zależności od tego czy masz Docker Hub czy GHCR):
@@ -553,6 +540,11 @@ cat headers.txt | grep -E 'Session|Word'
 - Twój klucz prywatny RSA w formacie PEM (`-----BEGIN PRIVATE KEY-----` …)
     
 
+![[Pasted image 20251112110225.png]]
+![[Pasted image 20251112110238.png]]
+![[Pasted image 20251112105709.png]]
+
+
 ---
 
 ## 💾 **KROK 3 — przygotowanie plików**
@@ -563,6 +555,7 @@ Zapisz słowo do pliku:
 echo -n "TUTAJ_WSTAW_SŁOWO" > word.txt
 ```
 
+![[Pasted image 20251112110342.png]]
 Sprawdź:
 
 ```bash
@@ -579,11 +572,15 @@ Tworzymy skrót SHA-256 (binarne dane):
 openssl dgst -sha256 -binary -out word.sha256 word.txt
 ```
 
+![[Pasted image 20251112110353.png]]
+
 Sprawdź długość (powinno być 32 bajty):
 
 ```bash
 ls -l word.sha256
 ```
+
+![[Pasted image 20251112110403.png]]
 
 ---
 
@@ -599,17 +596,23 @@ openssl pkeyutl -sign -in word.sha256 -inkey response.pem \
     -out signature.bin
 ```
 
+![[Pasted image 20251112110448.png]]
+
 Teraz zakoduj podpis do base64 (żeby można go było wysłać HTTP-em):
 
 ```bash
 base64 signature.bin > signature.b64
 ```
 
+![[Pasted image 20251112110458.png]]
+
 Sprawdź zawartość:
 
 ```bash
 cat signature.b64
 ```
+
+![[Pasted image 20251112110513.png]]
 
 ---
 
@@ -627,38 +630,17 @@ curl -X POST 'http://127.0.0.1:3009/submit' \
          }'
 ```
 
----
-
-## ✅ **KROK 7 — wynik**
-
-Serwer powinien odpowiedzieć czymś w stylu:
-
-```
-{"result": "OK"} 
-```
-
-albo
-
-```
-{"result": "Signature verified successfully"}
-```
-
-Jeśli zobaczysz błąd, np. `invalid signature` — sprawdź:
-
-- czy **użyłeś tego samego słowa (X-Word)**, które dał serwer,
-    
-- czy padding PSS ma `rsa_pss_saltlen:32`,
-    
-- czy nie dodałeś przypadkowo `\n` w `word.txt` (używaj `echo -n`!).
-    
-
----
-
-Chcesz, żebym przygotował gotowy **skrypt Bash** (np. `sign_task.sh`), który automatycznie wykona wszystkie kroki (GET, podpis, POST)?
-
+![[Pasted image 20251112105926.png]]
 
 ---
 
 ![[Pasted image 20251110192007.png]]
 ![[Pasted image 20251110192017.png]]
 
+![[Pasted image 20251112183500.png]]
+![[Pasted image 20251112183519.png]]
+
+DOKOŃCZYĆ - nie działa nie wiem czemu sprawdzanie podpisu 
+![[Pasted image 20251112185506.png]]
+
+![[Pasted image 20251112184030.png]]

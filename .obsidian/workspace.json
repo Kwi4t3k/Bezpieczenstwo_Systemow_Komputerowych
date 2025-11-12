@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0c890dbf0e76d5b2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "dodatkowe/OdNatalki.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "OdNatalki"
-            }
-          },
-          {
             "id": "84bcabeac315da70",
             "type": "leaf",
             "state": {
@@ -33,8 +21,7 @@
               "title": "Zadania"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,20 +168,19 @@
   },
   "active": "84bcabeac315da70",
   "lastOpenFiles": [
-    "Pasted image 20251112110513.png",
-    "Pasted image 20251112110458.png",
-    "Pasted image 20251112110448.png",
-    "Pasted image 20251112110445.png",
-    "Pasted image 20251112110403.png",
-    "Pasted image 20251112110353.png",
-    "Pasted image 20251112110342.png",
-    "Pasted image 20251112105636.png",
-    "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
-    "Pasted image 20251112110238.png",
-    "Pasted image 20251112110225.png",
-    "Pasted image 20251112105926.png",
+    "zdjecia/Pasted image 20251112185506.png",
     "dodatkowe/OdNatalki.pdf",
+    "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
     "lab4_Szyfrowanie_Asymetryczne/bezpieczeństwo_lab_27_10.pdf",
+    "zdjecia/Pasted image 20251112184030.png",
+    "zdjecia/Pasted image 20251112183519.png",
+    "zdjecia/Pasted image 20251112183500.png",
+    "zdjecia/Pasted image 20251112110513.png",
+    "zdjecia/Pasted image 20251112110353.png",
+    "zdjecia/Pasted image 20251112110342.png",
+    "zdjecia/Pasted image 20251112110238.png",
+    "zdjecia/Pasted image 20251112110225.png",
+    "zdjecia/Pasted image 20251112105926.png",
     "lab2_Funkcje_haszujące/Zadania.md",
     "lab2_Funkcje_haszujące/hashing.pdf",
     "lab3_Szyfrowanie_Symetryczne/symmetric-enc-exercises.pdf",
