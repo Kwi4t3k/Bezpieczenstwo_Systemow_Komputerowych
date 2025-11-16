@@ -1,6 +1,7 @@
 ![[Pasted image 20251110192108.png]]
 
 ![[Pasted image 20251115112643.png]]
+![[Pasted image 20251116112817.png]]
 ![[Pasted image 20251115112736.png]]
 
 ---
@@ -125,19 +126,40 @@ DOKOŃCZYĆ bo se nie chce działać kij wie dlaczegoXD
 
 ![[Pasted image 20251110193634.png]]
 
+![[Pasted image 20251116100149.png]]
+![[Pasted image 20251116100203.png]]
+
 ---
 
 ![[Pasted image 20251110193647.png]]
 ![[Pasted image 20251110193655.png]]
 
+![[Pasted image 20251116100946.png]]
+![[Pasted image 20251116101051.png]]
+
 ---
 
 ![[Pasted image 20251110193706.png]]
+
+## Zrobienie zasady w pliku rule.txt
+
+sa@se3si1
+tłumaczenie: 
+- s - do zamiany
+- sa@ - zamień 'a' na '@'
+- se3 - zamień 'e' na '3'
+- si1 - zamień 'i' na '1'
+
+![[Pasted image 20251116110033.png]]
+![[Pasted image 20251116110056.png]]
 
 ---
 
 ![[Pasted image 20251110193718.png]]
 ![[Pasted image 20251110193726.png]]
+
+![[Pasted image 20251116112712.png]]
+![[Pasted image 20251116112729.png]]
 
 ---
 
