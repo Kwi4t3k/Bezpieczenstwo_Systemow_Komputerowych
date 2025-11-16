@@ -1,3 +1,6 @@
+
+SPRAWDZIĆ CAŁOŚĆ
+
 ![[Pasted image 20251110134007.png]]
 
 ![[Pasted image 20251110140740.png]]

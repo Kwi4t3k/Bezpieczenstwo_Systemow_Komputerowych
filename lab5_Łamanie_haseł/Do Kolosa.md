@@ -8,6 +8,12 @@ podman rm -f $(podman ps -aq)
 
 Plik `.rule` składa się z **linijek**, gdzie każda linia to **jedna transformacja** lub **kombinacja transformacji**.
 
+PRZED $ POWINNO BYĆ \
+```
+\$_
+```
+to nam da znak _ na końcu wyrazu
+
 ---
 
 # 🟦 **1. Zmiany wielkości liter**

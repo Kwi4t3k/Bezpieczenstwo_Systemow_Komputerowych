@@ -165,17 +165,120 @@ tłumaczenie:
 
 ![[Pasted image 20251110193737.png]]
 
+![[Pasted image 20251116142342.png]]
+![[Pasted image 20251116142637.png]]
+
 ---
 
 ![[Pasted image 20251110193754.png]]
+
+## Sposób 1 - fcrackzip
+
+![[Pasted image 20251116161135.png]]
+
+## Sposób 2 - hashcat + zip2john
+
+![[Pasted image 20251116163336.png]]
+![[Pasted image 20251116163356.png]]
+## można wyczyścić plik ręcznie lub
+
+![[Pasted image 20251116163520.png]]
+
+![[Pasted image 20251116163548.png]]
+![[Pasted image 20251116163606.png]]
 
 ---
 
 ![[Pasted image 20251110193807.png]]
 ![[Pasted image 20251110193815.png]]
 
+## Metoda1 - hashcat + zip2john + crunch
+
+![[Pasted image 20251116164753.png]]
+![[Pasted image 20251116164813.png]]
+![[Pasted image 20251116164825.png]]
+
+## Metoda2 - hashcat (brute-force) + zip2john
+
+![[Pasted image 20251116165344.png]]
+
+## użyć attack mode 3
+
+![[Pasted image 20251116165409.png]]
+jak nie wyjdzie to:
+
+![[Pasted image 20251116165428.png]]
+![[Pasted image 20251116165447.png]]
+
+## Metoda3 - fcrackzip
+
+Chat mówi że tutaj się nie da
+
 ---
 
 ![[Pasted image 20251110193834.png]]
 ![[Pasted image 20251110193844.png]]
 
+## Metoda 1 - pdfcrack
+
+![[Pasted image 20251116175911.png]]
+
+## Generator PESEL w Python
+
+```
+from datetime import date, timedelta   # Importujemy klasę date i timedelta do pracy z datami
+
+# Definiujemy zakres dat wymagany w zadaniu:
+# od 1 lipca 1992 do 31 grudnia 1992
+start = date(1992, 7, 1)                # Data początkowa
+end   = date(1992, 12, 31)              # Data końcowa
+
+# Wagi wymagane do obliczenia cyfry kontrolnej PESEL
+weights = [1, 3, 7, 9, 1, 3, 7, 9, 1, 3]
+
+# Funkcja obliczająca cyfrę kontrolną PESEL
+def checksum(core):
+    # core – pierwsze 10 cyfr PESEL jako string
+    s = sum(int(digit) * weight for digit, weight in zip(core, weights))  
+    # Obliczamy sumę ważoną zgodnie ze wzorem
+    return str((10 - (s % 10)) % 10)    
+    # Wynik (cyfra kontrolna) – ostatnia cyfra PESEL
+
+# Otwieramy plik wyjściowy, do którego zapisany zostanie słownik PESEL
+with open("peselist.txt", "w") as f:
+    
+    d = start                            # Zaczynamy od pierwszej daty zakresu
+    
+    while d <= end:                      # Iterujemy po dniach aż do końca zakresu
+        
+        y = d.year % 100                 # Dwie ostatnie cyfry roku
+        m = d.month                      # Miesiąc (1–12)
+        dd = d.day                       # Dzień miesiąca (1–31)
+        
+        # Seria trzycyfrowa (000–999)
+        for ser in range(1000):
+            
+            # Cyfry oznaczające płeć — parzyste dla kobiet
+            for sex in (0, 2, 4, 6, 8):
+                
+                # Składamy pierwsze 10 cyfr PESEL:
+                core = f"{y:02d}{m:02d}{dd:02d}{ser:03d}{sex}"
+                
+                # Obliczamy cyfrę kontrolną
+                last = checksum(core)
+                
+                # Zapisujemy pełny PESEL (11 cyfr) do pliku
+                f.write(core + last + "\n")
+        
+        # Przechodzimy do następnego dnia
+        d += timedelta(days=1)
+
+# Informacja dla użytkownika
+print("Wygenerowano slownik peselist.txt")
+```
+
+![[Pasted image 20251116180237.png]]
+## Metoda 2 - hashcat + pdf2john
+
+![[Pasted image 20251116180628.png]]
+![[Pasted image 20251116180653.png]]
