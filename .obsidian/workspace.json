@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lab3_Szyfrowanie_Symetryczne/Zadania.md",
+                "file": "lab2_Funkcje_haszujące/Zadania.md",
                 "mode": "source",
                 "source": false
               },
@@ -166,9 +166,15 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "951cd74cd6d6806b",
+  "active": "4a34b86ef78c61f4",
   "lastOpenFiles": [
+    "zdjecia/Pasted image 20251120212358.png",
+    "zdjecia/Pasted image 20251120212100.png",
     "lab2_Funkcje_haszujące/Zadania.md",
+    "zdjecia/Pasted image 20251120212027.png",
+    "dodatkowe/ZadaniaOdNatalki.pdf",
+    "lab5_Łamanie_haseł/Do Kolosa.md",
+    "lab2_Funkcje_haszujące/Do kolosa.md",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
     "lab3_Szyfrowanie_Symetryczne/Zadania.md",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
@@ -177,14 +183,10 @@
     "zdjecia/Pasted image 20251116180628.png",
     "zdjecia/Pasted image 20251116180237.png",
     "zdjecia/Pasted image 20251116175911.png",
-    "dodatkowe/ZadaniaOdNatalki.pdf",
     "zdjecia/Pasted image 20251116165447.png",
     "zdjecia/Pasted image 20251116165428.png",
     "zdjecia/Pasted image 20251116165409.png",
     "zdjecia/Pasted image 20251116165344.png",
-    "zdjecia/Pasted image 20251116164825.png",
-    "zdjecia/Pasted image 20251116164813.png",
-    "lab5_Łamanie_haseł/Do Kolosa.md",
     "lab5_Łamanie_haseł/bezpieczeństwo_lab5_03_11.pdf",
     "dodatkowe/OdNatalki.pdf",
     "lab4_Szyfrowanie_Asymetryczne/bezpieczeństwo_lab_27_10.pdf",
@@ -195,7 +197,6 @@
     "lab3_Szyfrowanie_Symetryczne/bezpieczenstwo_lab3_20_10.pdf",
     "lab3_Szyfrowanie_Symetryczne/symmetric-enc-exercises (1).pdf",
     "lab3_Szyfrowanie_Symetryczne/Niepotwierdzony 868454.crdownload",
-    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
-    "lab2_Funkcje_haszujące/Do kolosa.md"
+    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md"
   ]
 }

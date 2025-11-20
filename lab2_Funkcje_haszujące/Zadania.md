@@ -28,22 +28,10 @@
 
 ![[Pasted image 20251109155809.png]]
 
-### **Usunięcie istniejącego kontenera**
+![[Pasted image 20251120212027.png]]
+![[Pasted image 20251120212100.png]]
 
-![[Pasted image 20251110104538.png]]
-
-Jeśli chcesz użyć tej samej nazwy kontenera, musisz najpierw usunąć istniejący kontener, który blokuje tę nazwę.
-
-```
-podman rm -f hashingbcryptx1
-```
-
-## Zadanie cd
-
-1. ![[Pasted image 20251110111358.png]]
-2. ![[Pasted image 20251110111436.png]]
-
-DOKOŃCZYĆ
+![[Pasted image 20251120212358.png]]
 
 ---
 
