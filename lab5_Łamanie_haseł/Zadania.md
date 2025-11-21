@@ -66,7 +66,7 @@
 
 ![[Pasted image 20251110193449.png]]
 
-DOKOŃCZYĆ bo se nie chce działać kij wie dlaczegoXD
+DOKOŃCZYĆ nie wiem dlaczego nie chce działać
 
 ![[Pasted image 20251115131545.png]]
 ![[Pasted image 20251115131559.png]]
