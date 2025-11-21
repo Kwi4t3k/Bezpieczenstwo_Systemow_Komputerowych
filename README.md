@@ -7,3 +7,4 @@
 3. [Szyfrowanie Symetryczne](lab3_Szyfrowanie_Symetryczne)
 4. [Szyfrowanie Asymetryczne](lab4_Szyfrowanie_Asymetryczne)
 5. [Łamanie haseł](lab5_Łamanie_haseł)
+6. [GPG / PGP](lab6_GPG_PGP)
