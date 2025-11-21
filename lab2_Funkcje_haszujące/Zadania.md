@@ -82,7 +82,20 @@
 ![[Pasted image 20251110124949.png]]
 ![[Pasted image 20251110125003.png]]
 ![[Pasted image 20251110130805.png]]
- DOKOŃCZYĆ
+
+### Sprawdzenie - hashcat
+
+![[Pasted image 20251121114513.png]]
+
+![[Pasted image 20251121114459.png]]
+
+![[Pasted image 20251121114533.png]]
+
+### hash-mode 3200 bo:
+![[Pasted image 20251121114907.png]]
+
+![[Pasted image 20251121114822.png]]
+![[Pasted image 20251121114828.png]]
 
 ---
 
