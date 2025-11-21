@@ -1,5 +1,4 @@
 
-SPRAWDZIĆ CAŁOŚĆ
 
 ![[Pasted image 20251110134007.png]]
 
@@ -68,7 +67,28 @@ SPRAWDZIĆ CAŁOŚĆ
 
 ![[Pasted image 20251110134229.png]]
 
-DOKOŃCZYĆ
+![[Pasted image 20251121121556.png]]
+![[Pasted image 20251121121611.png]]
+![[Pasted image 20251121121621.png]]
+![[Pasted image 20251121121815.png]]
+![[Pasted image 20251121121826.png]]
+### Wyjaśnienie komendy openssl:
+
+- `-d`: Określa, że operacja jest odszyfrowaniem.
+    
+- `-aes-256-ecb`: Określa użycie algorytmu AES z 256-bitowym kluczem w trybie ECB.
+    
+- `-in encrypted.bin`: Określa plik wejściowy, który zawiera zaszyfrowane dane.
+    
+- `-out decrypted.txt`: Określa plik wyjściowy, w którym zapisane będą odszyfrowane dane.
+    
+- `-pass pass:YOUR_PASSWORD`: Określa hasło używane do generowania klucza (może to być hasło podane w odpowiedzi).
+    
+- `-pbkdf2`: Określa, że klucz będzie generowany za pomocą funkcji **PBKDF2**.
+    
+- `-iter 356`: Określa liczbę iteracji funkcji PBKDF2 (w tym przypadku 356, jak wymagano).
+    
+- `-nosalt`: do szyfrowania NIE u»yto soli, wi¦c w deszyfrowaniu równie» NIE JEST potrzebna.
 
 ---
 
@@ -99,17 +119,34 @@ elif iv_len == 8:
 
 ```
 
-DOKOŃCZYĆ
+DOKOŃCZYĆ - nie mam pojęcia jak zrobić
 
 ---
 
 ![[Pasted image 20251110134309.png]]
 
-DOKOŃCZYĆ
+![[Pasted image 20251121132549.png]]
+![[Pasted image 20251121132651.png]]
+![[Pasted image 20251121132749.png]]
+![[Pasted image 20251121132810.png]]
+![[Pasted image 20251121132833.png]]
+Po tym w pliku image.enc.b64 trzeba usunąć sobie entery bo inaczej nie ogarnia (można ręcznie)
+![[Pasted image 20251121132939.png]]
 
 ---
 
 ![[Pasted image 20251110134320.png]]
 ![[Pasted image 20251110134327.png]]
 
-DOKOŃCZYĆ
+![[Pasted image 20251121135622.png]]
+![[Pasted image 20251121135636.png]]
+![[Pasted image 20251121135653.png]]
+![[Pasted image 20251121135721.png]]
+![[Pasted image 20251121135729.png]]
+Gdy wykonamy to polecenie, plik image.b64 będzie miał nowe linie
+![[Pasted image 20251121135808.png]]
+
+Gdy wykonamy to polecenie, plik nie będzie miał nowych linii i przejdzie bez edytowania w serwerze
+![[Pasted image 20251121140412.png]]
+
+![[Pasted image 20251121140422.png]]
