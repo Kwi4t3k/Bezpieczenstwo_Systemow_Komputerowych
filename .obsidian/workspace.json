@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a11b42e35b3a9161",
+        "id": "f4c02c954cb7d085",
         "type": "tabs",
         "children": [
           {
-            "id": "e639455c66c9c165",
+            "id": "e30f37e14637eb07",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lab5_Łamanie_haseł/Zadania.md",
+                "file": "lab6_GPG_PGP/Zadania.md",
                 "mode": "preview",
                 "source": false
               },
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "lab6_GPG_PGP/Zadania.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Linki zwrotne"
+              "title": "Linki zwrotne do Zadania"
             }
           },
           {
@@ -166,39 +167,39 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "e639455c66c9c165",
+  "active": "e30f37e14637eb07",
   "lastOpenFiles": [
+    "zdjecia/Pasted image 20251122123201.png",
+    "lab6_GPG_PGP/Zadania.md",
+    "zdjecia/Pasted image 20251122123130.png",
+    "zdjecia/Pasted image 20251122121455.png",
+    "zdjecia/Pasted image 20251122121443.png",
+    "Pasted image 20251122120748.png",
     "lab6_GPG_PGP/Bezpieczenstwo_lab6_17_11.pdf",
+    "zdjecia/Pasted image 20251122120219.png",
+    "zdjecia/Pasted image 20251122120202.png",
+    "Pasted image 20251122115629.png",
+    "zdjecia/Pasted image 20251122113829.png",
+    "zdjecia/Pasted image 20251122113811.png",
+    "lab5_Łamanie_haseł/Do Kolosa.md",
+    "lab5_Łamanie_haseł/Zadania.md",
     "lab6_GPG_PGP/gpg.pdf",
     "lab6_GPG_PGP/gpg-teoria.pdf",
     "lab6_GPG_PGP/pgp.pdf",
-    "lab5_Łamanie_haseł/Zadania.md",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
     "lab3_Szyfrowanie_Symetryczne/Zadania.md",
     "lab2_Funkcje_haszujące/Zadania.md",
     "dodatkowe/ZadaniaOdNatalki.pdf",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
-    "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
     "dodatkowe/Final notatka na kolos.md",
-    "zdjecia/Pasted image 20251121190137.png",
-    "zdjecia/Pasted image 20251121190118.png",
-    "zdjecia/Pasted image 20251121185936.png",
-    "lab5_Łamanie_haseł/Do Kolosa.md",
-    "Pasted image 20251121190137.png",
-    "Pasted image 20251121190118.png",
-    "Pasted image 20251121185936.png",
     "lab4_Szyfrowanie_Asymetryczne/Do kolosa.md",
     "Final notatka na kolos.md",
-    "zdjecia/Pasted image 20251121173312.png",
-    "zdjecia/Pasted image 20251121173248.png",
     "lab3_Szyfrowanie_Symetryczne/Do kolosa.md",
-    "lab6_GPG_PGP/Zadania.md",
     "lab6_GPG_PGP/Niepotwierdzony 407407.crdownload",
     "lab6_GPG_PGP/Niepotwierdzony 68180.crdownload",
     "lab6_GPG_PGP/Niepotwierdzony 147089.crdownload",
     "lab6_GPG_PGP/Niepotwierdzony 669157.crdownload",
     "lab6_GPG_PGP",
-    "zdjecia/Pasted image 20251121140422.png",
     "lab2_Funkcje_haszujące/Do kolosa.md",
     "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md",
     "lab1_Wprowadzenie_Narzędzia/Do kolosa.md"
