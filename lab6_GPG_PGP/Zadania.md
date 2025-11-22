@@ -128,25 +128,86 @@ Wybieramy typ klucza 2 bo w poleceniu jest informacja o tym, że ma być DSA
 
 ![[Pasted image 20251122100516.png]]
 
+![[Pasted image 20251122144721.png]]
+![[Pasted image 20251122144745.png]]
+
 ---
 
 ![[Pasted image 20251122100528.png]]
+
+![[Pasted image 20251122145505.png]]
 
 ---
 
 ![[Pasted image 20251122100548.png]]
 
+![[Pasted image 20251122145747.png]]
+
 ---
 
 ![[Pasted image 20251122100600.png]]
+
+![[Pasted image 20251122152209.png]]
+![[Pasted image 20251122152235.png]]
+![[Pasted image 20251122152259.png]]
+![[Pasted image 20251122152314.png]]
 
 ---
 
 ![[Pasted image 20251122100615.png]]
 
+### Wszystkie klucze (publiczne + prywatne)
+```
+gpg --list-keys
+```
+![[Pasted image 20251122153201.png]]
+### Tylko klucze publiczne
+```
+gpg --list-public-keys
+```
+
+### Tylko klucze prywatne
+```
+gpg --list-secret-keys
+```
+
+### Jeśli chcesz zobaczyć klucze z fingerprintami:
+```
+gpg --list-keys --fingerprint
+```
+![[Pasted image 20251122153213.png]]
+### Jeśli chcesz format „długi” (pokazuje fingerprint):
+```
+gpg --list-keys --keyid-format long
+gpg --list-secret-keys --keyid-format long
+```
+![[Pasted image 20251122153227.png]]
+
 ---
 
 ![[Pasted image 20251122100623.png]]
+
+### Komendy
+
+1. Usuwanie klucza prywatnego
+```
+gpg --delete-secret-keys [id klucza / mail]
+```
+
+2. Usuwanie klucza publicznego
+```
+gpg --delete-keys [id klucza / mail]
+```
+
+### lub wszystko za jednym razem
+```
+gpg --delete-secret-and-public-key [id klucza / mail]
+```
+
+![[Pasted image 20251122153900.png]]
+![[Pasted image 20251122153947.png]]
+![[Pasted image 20251122154218.png]]
+![[Pasted image 20251122154502.png]]
 
 ---
 
