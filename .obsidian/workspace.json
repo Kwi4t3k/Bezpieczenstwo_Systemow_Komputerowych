@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f4c02c954cb7d085",
+        "id": "83e7504aeaaa403c",
         "type": "tabs",
         "children": [
           {
-            "id": "e30f37e14637eb07",
+            "id": "0aa5d17578f3c9b3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "lab6_GPG_PGP/Zadania.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Zadania"
+              "title": "Nowa karta"
             }
           }
         ]
@@ -167,9 +163,14 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "e30f37e14637eb07",
+  "active": "4a34b86ef78c61f4",
   "lastOpenFiles": [
+    "lab7_Powtórzenie/powtorzenie.pdf",
+    "lab7_Powtórzenie/Niepotwierdzony 186478.crdownload",
+    "lab7_Powtórzenie/BSK_lab7_24_11_powtorzenie.pdf",
+    "lab7_Powtórzenie",
     "lab6_GPG_PGP/Zadania.pdf",
+    "lab6_GPG_PGP/Zadania.md",
     "lab5_Łamanie_haseł/Zadania.md",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.pdf",
@@ -181,7 +182,6 @@
     "lab2_Funkcje_haszujące/Zadania.pdf",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
     "lab1_Wprowadzenie_Narzędzia/Zadania.pdf",
-    "lab6_GPG_PGP/Zadania.md",
     "zdjecia/Pasted image 20251122154502.png",
     "zdjecia/Pasted image 20251122154218.png",
     "zdjecia/Pasted image 20251122153947.png",
@@ -193,14 +193,10 @@
     "lab6_GPG_PGP/Bezpieczenstwo_lab6_17_11.pdf",
     "lab5_Łamanie_haseł/Do Kolosa.md",
     "lab6_GPG_PGP/gpg.pdf",
-    "lab6_GPG_PGP/gpg-teoria.pdf",
-    "lab6_GPG_PGP/pgp.pdf",
-    "dodatkowe/ZadaniaOdNatalki.pdf",
     "dodatkowe/Final notatka na kolos.md",
     "lab4_Szyfrowanie_Asymetryczne/Do kolosa.md",
     "Final notatka na kolos.md",
     "lab3_Szyfrowanie_Symetryczne/Do kolosa.md",
-    "lab6_GPG_PGP/Niepotwierdzony 407407.crdownload",
     "lab2_Funkcje_haszujące/Do kolosa.md",
     "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md",
     "lab1_Wprowadzenie_Narzędzia/Do kolosa.md"
