@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "83e7504aeaaa403c",
+        "id": "9152457b1b594cfa",
         "type": "tabs",
         "children": [
           {
-            "id": "0aa5d17578f3c9b3",
+            "id": "56bae6a57a300778",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "lab2_Funkcje_haszujące/Zadania.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nowa karta"
+              "title": "Zadania"
             }
           }
         ]
@@ -163,8 +167,12 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "4a34b86ef78c61f4",
+  "active": "56bae6a57a300778",
   "lastOpenFiles": [
+    "lab2_Funkcje_haszujące/Do kolosa.md",
+    "lab2_Funkcje_haszujące/Zadania.md",
+    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
+    "lab1_Wprowadzenie_Narzędzia/Zadania.md",
     "lab7_Powtórzenie/powtorzenie.pdf",
     "lab7_Powtórzenie/Niepotwierdzony 186478.crdownload",
     "lab7_Powtórzenie/BSK_lab7_24_11_powtorzenie.pdf",
@@ -178,9 +186,7 @@
     "lab4_Szyfrowanie_Asymetryczne/informacja.png",
     "lab3_Szyfrowanie_Symetryczne/Zadania.md",
     "lab3_Szyfrowanie_Symetryczne/Zadania.pdf",
-    "lab2_Funkcje_haszujące/Zadania.md",
     "lab2_Funkcje_haszujące/Zadania.pdf",
-    "lab1_Wprowadzenie_Narzędzia/Zadania.md",
     "lab1_Wprowadzenie_Narzędzia/Zadania.pdf",
     "zdjecia/Pasted image 20251122154502.png",
     "zdjecia/Pasted image 20251122154218.png",
@@ -192,13 +198,10 @@
     "Pasted image 20251122153106.png",
     "lab6_GPG_PGP/Bezpieczenstwo_lab6_17_11.pdf",
     "lab5_Łamanie_haseł/Do Kolosa.md",
-    "lab6_GPG_PGP/gpg.pdf",
     "dodatkowe/Final notatka na kolos.md",
     "lab4_Szyfrowanie_Asymetryczne/Do kolosa.md",
     "Final notatka na kolos.md",
     "lab3_Szyfrowanie_Symetryczne/Do kolosa.md",
-    "lab2_Funkcje_haszujące/Do kolosa.md",
-    "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md",
-    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md"
+    "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md"
   ]
 }
