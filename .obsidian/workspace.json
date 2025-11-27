@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lab2_Funkcje_haszujące/Zadania.md",
+                "file": "lab3_Szyfrowanie_Symetryczne/Zadania.md",
                 "mode": "preview",
                 "source": false
               },
@@ -169,9 +169,11 @@
   },
   "active": "56bae6a57a300778",
   "lastOpenFiles": [
+    "lab3_Szyfrowanie_Symetryczne/Do kolosa.md",
+    "lab3_Szyfrowanie_Symetryczne/Zadania.md",
+    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
     "lab2_Funkcje_haszujące/Do kolosa.md",
     "lab2_Funkcje_haszujące/Zadania.md",
-    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
     "lab7_Powtórzenie/powtorzenie.pdf",
     "lab7_Powtórzenie/Niepotwierdzony 186478.crdownload",
@@ -184,7 +186,6 @@
     "lab4_Szyfrowanie_Asymetryczne/Zadania.pdf",
     "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
     "lab4_Szyfrowanie_Asymetryczne/informacja.png",
-    "lab3_Szyfrowanie_Symetryczne/Zadania.md",
     "lab3_Szyfrowanie_Symetryczne/Zadania.pdf",
     "lab2_Funkcje_haszujące/Zadania.pdf",
     "lab1_Wprowadzenie_Narzędzia/Zadania.pdf",
@@ -201,7 +202,6 @@
     "dodatkowe/Final notatka na kolos.md",
     "lab4_Szyfrowanie_Asymetryczne/Do kolosa.md",
     "Final notatka na kolos.md",
-    "lab3_Szyfrowanie_Symetryczne/Do kolosa.md",
     "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md"
   ]
 }

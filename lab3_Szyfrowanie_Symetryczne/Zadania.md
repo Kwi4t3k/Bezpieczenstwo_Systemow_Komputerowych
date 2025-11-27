@@ -31,7 +31,7 @@
 ![[Pasted image 20251110134122.png]]
 
 ### Informacja do obliczeń
-	w openssl rand -hex 24 > key
+	openssl rand -hex 24 > key
 24, ponieważ --> 192 / 8 = 24
 
 ![[Pasted image 20251110153746.png]]
