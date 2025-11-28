@@ -40,7 +40,7 @@ Trzeba podać --armor bo w kluczu będą krzaki których serwer nie zaakceptuje
 
 ![[Pasted image 20251122103028.png]]
 
-### d)
+## d)
 
 ![[Pasted image 20251122103046.png]]
 
