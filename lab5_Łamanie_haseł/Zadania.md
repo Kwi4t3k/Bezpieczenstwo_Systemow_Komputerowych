@@ -66,7 +66,11 @@
 
 ![[Pasted image 20251110193449.png]]
 
-DOKOŃCZYĆ nie wiem dlaczego nie chce działać
+POPRAWNE KOMENDY
+
+crunch 8 8 -t pass\%\%\%\% -o wordlist.txt
+
+hashcat -m 0 -a 3 hash.txt wordlist.txt
 
 ![[Pasted image 20251115131545.png]]
 ![[Pasted image 20251115131559.png]]
