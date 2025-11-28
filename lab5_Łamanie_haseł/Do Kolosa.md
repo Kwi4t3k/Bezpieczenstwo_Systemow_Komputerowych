@@ -316,4 +316,3 @@ Odwróć:                 r
 Wstaw X na pozycji n:   inX
 Duplikuj słowo:         p1
 ```
-

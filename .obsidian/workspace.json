@@ -8,63 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "56bae6a57a300778",
+            "id": "27d6651b4b2d041d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lab6_GPG_PGP/Do kolosa.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Do kolosa"
-            }
-          },
-          {
-            "id": "d90a4a6f30036959",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "lab7_Powtórzenie/Do kolosa.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Do kolosa"
-            }
-          }
-        ]
-      },
-      {
-        "id": "aa4d0f2f799f7f0b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "59c145125d0f942f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "lab6_GPG_PGP/Zadania.md",
+                "file": "dodatkowe/Final notatka na kolos.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zadania"
-            }
-          },
-          {
-            "id": "4e4bbadc564b8da2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "lab7_Powtórzenie/powtorzenie.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "powtorzenie"
+              "title": "Final notatka na kolos"
             }
           }
         ]
@@ -213,22 +167,27 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "56bae6a57a300778",
+  "active": "27d6651b4b2d041d",
   "lastOpenFiles": [
-    "lab6_GPG_PGP/Zadania.md",
+    "dodatkowe/notatka.pdf",
+    "dodatkowe/notatka.af~lock~",
+    "dodatkowe/notatka.af",
+    "dodatkowe/Final_notatka_na_kolos.pdf",
     "lab6_GPG_PGP/Do kolosa.md",
+    "dodatkowe/Final notatka na kolos.md",
+    "lab5_Łamanie_haseł/Do Kolosa.md",
+    "lab4_Szyfrowanie_Asymetryczne/Do kolosa.md",
+    "lab3_Szyfrowanie_Symetryczne/Do kolosa.md",
+    "lab2_Funkcje_haszujące/Do kolosa.md",
+    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
+    "lab6_GPG_PGP/Zadania.md",
     "lab7_Powtórzenie/powtorzenie.pdf",
     "lab7_Powtórzenie/Do kolosa.md",
     "lab5_Łamanie_haseł/Zadania.md",
-    "lab5_Łamanie_haseł/Do Kolosa.md",
     "lab5_Łamanie_haseł/bezpieczeństwo_lab5_03_11.pdf",
     "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
-    "lab4_Szyfrowanie_Asymetryczne/Do kolosa.md",
-    "lab3_Szyfrowanie_Symetryczne/Do kolosa.md",
     "lab3_Szyfrowanie_Symetryczne/Zadania.md",
-    "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
-    "lab2_Funkcje_haszujące/Do kolosa.md",
     "lab2_Funkcje_haszujące/Zadania.md",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
     "lab7_Powtórzenie/Niepotwierdzony 186478.crdownload",
@@ -238,9 +197,6 @@
     "lab4_Szyfrowanie_Asymetryczne/Zadania.pdf",
     "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
     "lab4_Szyfrowanie_Asymetryczne/informacja.png",
-    "lab3_Szyfrowanie_Symetryczne/Zadania.pdf",
-    "lab2_Funkcje_haszujące/Zadania.pdf",
-    "lab1_Wprowadzenie_Narzędzia/Zadania.pdf",
     "zdjecia/Pasted image 20251122154502.png",
     "zdjecia/Pasted image 20251122154218.png",
     "zdjecia/Pasted image 20251122153947.png",
@@ -249,7 +205,6 @@
     "zdjecia/Pasted image 20251122153213.png",
     "zdjecia/Pasted image 20251122153201.png",
     "Pasted image 20251122153106.png",
-    "dodatkowe/Final notatka na kolos.md",
     "Final notatka na kolos.md"
   ]
 }
