@@ -5,6 +5,7 @@ curl -X GET http://localhost:port/encrypt -H 'accept: application/json'
 curl -X POST http://localhost:port/submit -H 'accept: \*/\*' -H 'Content-Type: application/json' -d '{"session_id":"id_sesji", "encrypted_b64":"zaszyfrowane_słowo_base64"}'
 
 curl -s -o data.txt -X GET 'http://localhost:port/encrypt' -> wysłanie do pliku outputu komendy
+curl -s -O -X GET 'http://localhost:port/encrypt'
 
 curl -X POST 'http://localhost:port/submit' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{"session_id":"id_sesji", "encrypted_data":" ' "$(cat image.enc.b64)" ' "}'
 
@@ -64,16 +65,18 @@ openssl rand -hex liczba > key/iv
 liczba zależy od ilości bitów z polecenia, gdy klucz musi mieć 192 bity to -> 192/8 = 24,
 czyli -> openssl rand -hex 24 > key
 
-### OPENSSL SZYFROWANIE zdjęć - sprawdzić jak działa zadanie 2.11
-echo -n "ciąg_base64" | base64 -d > image.png.bin
+### OPENSSL SZYFROWANIE zdjęć
+echo -n "ciąg_base64" | base64 -d > image.png
 
-openssl enc -aria-128-ctr -K key -iv IV -in image.png.bin -out image.enc
+openssl enc -aria-128-ctr -K key -iv IV -in image.png -out image.enc
 
 base64 image.enc > image.enc.b64 -> w tym pliku trzeba usunąć ręcznie entery bo nie przejdzie w serwerze
 
-### OPENSSL DESZYFROWANIE zdjęć - sprawdzić jak działa zadanie 2.12
-echo -n "ciąg_base64" | base64 -d > image.enc.bin
+lub -> base64 -w 0 image.enc > image.enc.b64
 
-openssl enc -d -aria-128-cfb -K key -iv IV -in image.enc.bin -out image.png
+### OPENSSL DESZYFROWANIE zdjęć
+echo -n "ciąg_base64" | base64 -d > image.enc
+
+openssl enc -d -aria-128-cfb -K key -iv IV -in image.enc -out image.png
 
 base64 -w 0 image.png > image.b64
