@@ -3,6 +3,8 @@ curl -X POST 'http://localhost:port/checkkeys' -H 'accept: application/json' -H 
 
 curl -s -D headers.txt -o privkey.pem -X GET 'http://localhost:port/getprivkey' -H 'accept: application/json' -> wysłanie nagłówków i outputu do pliku
 
+curl -s -D headers.txt -o response.zip -X GET 'http://127.0.0.1:3007/decrypt' -H 'accept: application/json'
+
 ---
 
 ### Generowanie pary kluczy RSA (publiczny i prywatny) + eksport do plików + długość klucza 1024 bity
@@ -24,9 +26,34 @@ openssl pkey -in key.pem -text -noout
 openssl pkey -pubin -in key.pub -text -noout
 
 ### Zaszyfrowanie słowa algorytmem RSA-2048 z kluczem publicznym i wybranym trybem paddingu: OAEP
-openssl pkeyutl -encrypt -pubin -inkey key.pub -pkeyopt rsa_padding_mode:oaep -in słowo -out encrypted.bin
+openssl pkeyutl -encrypt -pubin -inkey key.pub -pkeyopt rsa_padding_mode:oaep -in plik_ze_słowem -out encrypted.bin
 
 pod słowo można też dać -> <(echo -n słowo)
+
+### Odkodowanie i odszyfrowanie słowa przy użyciu klucza prywatnego i algorytmu RSA-4096 z paddingiem OAEP
+openssl pkeyutl -decrypt -inkey private_key.pem -in <(base64 -d enctypted.txt) -pkeyopt rsa_padding_mode:oaep -out decrypted.txt
+
+lub 
+
+base64 -d encrypted.txt > encrypted.bin
+openssl pkeyutl -decrypt -inkey private_key.pem -in encrypted.bin -pkeyopt rsa_padding_mode:oaep -out decrypted.txt
+
+### Podpisanie słowa kluczem prywatnym + przy podpisie parametr paddingu PSS + format base64 + używana funkcja skrótu SHA-256 + długość soli ma być równa z długością skrótu (32B dla SHA-256)
+utworzenie skrótu -> openssl dgst -sha256 -binary -out word.sha256 word.txt
+`żeby sprawdzić ile wynosi długość pliku .sha256 -> ls -l word.sha256`
+
+podpisanie słowa -> openssl pkeyutl -sign -in word.sha256 -inkey private_key_pem -pkeyopt digest:sha256 -pkeyopt rsa_padding_mode:pss -pkeyopt rsa_pss_saltlen:32 -out signature.bin
+
+base64 signature.bin > signature.b64
+
+### Weryfikacja podpisu algorytmem RSA-2048 i trybem paddingu PSS + funkcja skrótu SHA-256 + długość soli dopasowana do skrótu
+base64 -d signature.b64 > signature.bin
+
+openssl dgst -sha256 -verify public_key.pem -sigopt rsa_padding_mode:pss -sigopt rsa_pss_saltlen:32 -signature signature.bin word.txt
+
+`przechwycenie wyniku do zmiennej result -> result=$(openssl dgst -sha256 -verify public_key.pem -sigopt rsa_padding_mode:pss -sigopt rsa_pss_saltlen:32 -signature signature.bin word.txt | grep -q 'Verified OK' && echo true || echo false)`
+`sprawdzenie czy działa -> echo $result`
+`użycie w curl -> -F "user_verified=$result"`
 
 ---
 

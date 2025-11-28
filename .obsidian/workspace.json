@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lab4_Szyfrowanie_Asymetryczne/Do kolosa.md",
-                "mode": "source",
+                "file": "lab5_Łamanie_haseł/Do Kolosa.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Do kolosa"
+              "title": "Do Kolosa"
             }
           }
         ]
@@ -35,7 +35,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
+                "file": "lab5_Łamanie_haseł/Zadania.md",
                 "mode": "preview",
                 "source": false
               },
@@ -189,24 +189,26 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "2067fe39bbcb34fc",
+  "active": "56bae6a57a300778",
   "lastOpenFiles": [
+    "lab5_Łamanie_haseł/Do Kolosa.md",
+    "lab5_Łamanie_haseł/bezpieczeństwo_lab5_03_11.pdf",
+    "lab5_Łamanie_haseł/Zadania.md",
+    "lab7_Powtórzenie/powtorzenie.pdf",
+    "lab6_GPG_PGP/Zadania.md",
+    "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
     "lab4_Szyfrowanie_Asymetryczne/Do kolosa.md",
     "lab3_Szyfrowanie_Symetryczne/Do kolosa.md",
     "lab3_Szyfrowanie_Symetryczne/Zadania.md",
-    "lab5_Łamanie_haseł/Do Kolosa.md",
     "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
     "lab2_Funkcje_haszujące/Do kolosa.md",
     "lab2_Funkcje_haszujące/Zadania.md",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
-    "lab7_Powtórzenie/powtorzenie.pdf",
     "lab7_Powtórzenie/Niepotwierdzony 186478.crdownload",
     "lab7_Powtórzenie/BSK_lab7_24_11_powtorzenie.pdf",
     "lab7_Powtórzenie",
     "lab6_GPG_PGP/Zadania.pdf",
-    "lab6_GPG_PGP/Zadania.md",
-    "lab5_Łamanie_haseł/Zadania.md",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.pdf",
     "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
     "lab4_Szyfrowanie_Asymetryczne/informacja.png",
@@ -221,9 +223,7 @@
     "zdjecia/Pasted image 20251122153213.png",
     "zdjecia/Pasted image 20251122153201.png",
     "Pasted image 20251122153106.png",
-    "lab6_GPG_PGP/Bezpieczenstwo_lab6_17_11.pdf",
     "dodatkowe/Final notatka na kolos.md",
-    "Final notatka na kolos.md",
-    "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md"
+    "Final notatka na kolos.md"
   ]
 }
