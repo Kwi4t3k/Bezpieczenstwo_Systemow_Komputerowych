@@ -40,6 +40,7 @@ Nie trzeba w żaden sposób edytować plików
 ![[Pasted image 20251110191850.png]]
 
 ![[Pasted image 20251111200913.png]]
+tutaj \\/        openssl ec -in privkey.pem -pubout -out ecpub.pem
 ![[Pasted image 20251111200927.png]]
 
 ---

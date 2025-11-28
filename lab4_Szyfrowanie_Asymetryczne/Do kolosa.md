@@ -1,3 +1,35 @@
+## Przydatne curle
+curl -X POST 'http://localhost:port/checkkeys' -H 'accept: application/json' -H 'Content-Type: multipart/form-data' -F 'session_id=id_sesji' -F 'pub_key_file=@pubkey.pem' -F 'priv_key_file=@privkey.pem'
+
+curl -s -D headers.txt -o privkey.pem -X GET 'http://localhost:port/getprivkey' -H 'accept: application/json' -> wysłanie nagłówków i outputu do pliku
+
+---
+
+### Generowanie pary kluczy RSA (publiczny i prywatny) + eksport do plików + długość klucza 1024 bity
+klucz prywatny -> openssl genpkey -algorithm RSA -out privkey.pem -pkeyopt rsa_keygen_bits:1024
+
+klucz publiczny -> openssl pkey -in privkey.pem -pubout -out pubkey.pem
+
+### Generowanie pary kluczy EC - krzywych eliptycznych (publiczny i prywatny) + krzywa eliptyczna prime256v1 + eksport do plików
+klucz prywatny -> openssl genpkey -algorithm EC -out ecpriv.pem -pkeyopt ec_paramgen_curve:prime256v1
+
+klucz publiczny -> openssl ec -in ecpriv.pem -pubout -out ecpub.pem
+
+### Sprawdzenie ilu bitowy jest klucz
+publiczny EC -> openssl ec -pubin -in ec_public_key.pem -text -noout
+prywatny EC -> openssl ec -in ec_private_key.pem -text -noout
+
+uniwersalne:
+openssl pkey -in key.pem -text -noout
+openssl pkey -pubin -in key.pub -text -noout
+
+### Zaszyfrowanie słowa algorytmem RSA-2048 z kluczem publicznym i wybranym trybem paddingu: OAEP
+openssl pkeyutl -encrypt -pubin -inkey key.pub -pkeyopt rsa_padding_mode:oaep -in słowo -out encrypted.bin
+
+pod słowo można też dać -> <(echo -n słowo)
+
+---
+
 Oczywiście! Aby odpowiedzieć na Twoje pytanie, wyjaśnię, w jakich sytuacjach i dla jakich plików OpenSSL wymaga formatu binarnego, a nie tekstowego (np. base64). Poniżej przedstawiam szczegółowe rozpisanie krok po kroku, kiedy OpenSSL wymaga plików binarnych:
 
 ### 1. **Podpis cyfrowy w formacie binarnym**
