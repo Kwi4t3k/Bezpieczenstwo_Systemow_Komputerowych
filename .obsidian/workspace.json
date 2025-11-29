@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9152457b1b594cfa",
+        "id": "57776b449e71a8bc",
         "type": "tabs",
         "children": [
           {
-            "id": "27d6651b4b2d041d",
+            "id": "48834c5c0218ad72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dodatkowe/Final notatka na kolos.md",
+                "file": "lab7_Powtórzenie/Do kolosa.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Final notatka na kolos"
+              "title": "Do kolosa"
             }
           }
         ]
@@ -167,22 +167,23 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "27d6651b4b2d041d",
+  "active": "48834c5c0218ad72",
   "lastOpenFiles": [
-    "dodatkowe/notatka.pdf",
-    "dodatkowe/notatka.af~lock~",
-    "dodatkowe/notatka.af",
     "dodatkowe/Final_notatka_na_kolos.pdf",
-    "lab6_GPG_PGP/Do kolosa.md",
+    "lab7_Powtórzenie/Do kolosa.md",
+    "lab7_Powtórzenie/BSK_lab7_24_11_powtorzenie.pdf",
+    "lab7_Powtórzenie/powtorzenie.pdf",
+    "dodatkowe/notatka.af~lock~",
     "dodatkowe/Final notatka na kolos.md",
+    "dodatkowe/notatka.pdf",
+    "dodatkowe/notatka.af",
+    "lab6_GPG_PGP/Do kolosa.md",
     "lab5_Łamanie_haseł/Do Kolosa.md",
     "lab4_Szyfrowanie_Asymetryczne/Do kolosa.md",
     "lab3_Szyfrowanie_Symetryczne/Do kolosa.md",
     "lab2_Funkcje_haszujące/Do kolosa.md",
     "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
     "lab6_GPG_PGP/Zadania.md",
-    "lab7_Powtórzenie/powtorzenie.pdf",
-    "lab7_Powtórzenie/Do kolosa.md",
     "lab5_Łamanie_haseł/Zadania.md",
     "lab5_Łamanie_haseł/bezpieczeństwo_lab5_03_11.pdf",
     "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md",
@@ -191,10 +192,8 @@
     "lab2_Funkcje_haszujące/Zadania.md",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
     "lab7_Powtórzenie/Niepotwierdzony 186478.crdownload",
-    "lab7_Powtórzenie/BSK_lab7_24_11_powtorzenie.pdf",
     "lab7_Powtórzenie",
     "lab6_GPG_PGP/Zadania.pdf",
-    "lab4_Szyfrowanie_Asymetryczne/Zadania.pdf",
     "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
     "lab4_Szyfrowanie_Asymetryczne/informacja.png",
     "zdjecia/Pasted image 20251122154502.png",
