@@ -1,0 +1,49 @@
+
+=== Zadania dla studenta numer 15 ===
+
+Zadanie 1 - OpenSSL
+-------------------
+1. Wygeneruj parę kluczy RSA (2048 bitów):
+
+2. Podpisz zawartość pliku message.txt:
+
+3. Skopiuj klucz publiczny i podpis do odpowiednich sekcji w pliku odpowiedzi.txt
+
+Zadanie 2 - GnuPG
+-----------------
+1. Zaimportuj klucz publiczny prowadzącego (instructor_key.asc):
+
+2. Zweryfikuj podpis w pliku message_to_verify.sig:
+
+3. Zaszyfruj następującą wiadomość kluczem prowadzącego:
+   "Szyfrowanie_15_QSrE2ghcD0IyFl6votZt"
+   Wynik szyfrowania zapisz w formacie Base64
+
+4. Skopiuj wyniki weryfikacji i zaszyfrowaną wiadomość do odpowiednich sekcji w pliku odpowiedzi.txt
+
+Zadanie 3 - OpenSSL
+-------------------
+1. Wygeneruj hash następującej wiadomości "Wiadomosc_15_uBe4XDhEx05Trc36jED8" za pomocą funkcji haszującej SHA-224.
+
+2. Skopiuj wynik haszowania do odpowiedniej sekcji w pliku odpowiedzi.txt
+
+Zadanie 4 - OpenSSL
+-------------------
+1. Zaszyfruj następującą wiadomość "Wiadomosc_15_7aTj9b2Q19ouRrqo12Xn", podanym kluczem: "7ada4bca2fcd531abc752c1f532f1d8e71ff92f45e566225" używając algorytmu AES-192-CBC. Wektor inicjalizacyjny powinien zawierać same 1.
+
+2. Skopiuj wynik szyfrowania w formacie Base64 do odpowiedniej sekcji w pliku odpowiedzi.txt
+
+Zadanie 5 - Certyfikat
+----------------------
+1. W pliku cert.pem znajduje się certyfikat w formacie X509. Zapisz w pliku odpowiedzi.txt, w odpowiedniej sekcji potoczną nazwę wystawcy certifikatu.
+
+Zadanie 6 - Łamanie hasha
+-------------------------
+1. Ustal czterocyfrowy pin na podstawie jego skrótu SHA256: "75b167181ef4fd16ae5df34a55c9b9e1e7c4b84318d56d5978989f87093fea89".
+
+2. Pin wpisz do odpowiedniej sekcji w pliku odpowiedzi.txt
+
+-------------------------------
+Plik do oddania: odpowiedzi.txt
+-------------------------------
+UWAGA: Zachowaj formatowanie pliku odpowiedzi.txt - nie usuwaj żadnych sekcji ani znaczników!

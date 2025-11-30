@@ -1,0 +1,40 @@
+### ODPOWIEDZI - Student 14 ###
+
+=== ZADANIE 1 - OpenSSL ===
+[KLUCZ PUBLICZNY]
+# Wklej tutaj zawartość pliku public_key.pem
+-----BEGIN PUBLIC KEY-----
+...
+-----END PUBLIC KEY-----
+
+[PODPIS]
+# Wklej tutaj wynik polecenia openssl dgst -sha256 -sign private_key.pem -hex message.txt
+
+
+=== ZADANIE 2 - GnuPG ===
+[WERYFIKACJA PODPISU]
+# Wklej tutaj wynik polecenia gpg --verify message_to_verify.sig
+
+[ZASZYFROWANA WIADOMOŚĆ]
+# Wklej tutaj zaszyfrowaną wiadomość (wynik gpg --encrypt)
+-----BEGIN PGP MESSAGE-----
+
+-----END PGP MESSAGE-----
+
+=== ZADANIE 3 - OpenSSL ===
+[HASHOWANIE]
+# Wklej tutaj wynik hashowania
+
+=== ZADANIE 4 - OpenSSL ===
+[SZYFROWANIE SYMETRYCZNE]
+# Wklej tutaj wynik szyfrowania symetrycznego
+
+=== ZADANIE 5 - Certyfikat ===
+[WYSTAWCA CERTYFIKATU]
+# Wklej tutaj potoczną nazwę wystawcy certyfikatu
+
+=== ZADANIE 6 - Łamanie hasha
+[PIN]
+# Wpisz tutaj odgadnięty pin
+
+### KONIEC ODPOWIEDZI ###
