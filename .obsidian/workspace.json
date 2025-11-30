@@ -11,10 +11,12 @@
             "id": "741939eafee773d8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nowa karta"
+              "type": "pdf",
+              "state": {
+                "file": "dodatkowe/notatki/notatka.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "notatka"
             }
           }
         ]
@@ -165,6 +167,9 @@
   },
   "active": "741939eafee773d8",
   "lastOpenFiles": [
+    "dodatkowe/notatki/Final notatka na kolos.md",
+    "dodatkowe/notatki/Final_notatka_na_kolos.pdf",
+    "dodatkowe/kolosy/2024/student_1/odpowiedzi_test.md",
     "lab7_Powtórzenie/Do kolosa.md",
     "dodatkowe/Final notatka na kolos.md",
     "dodatkowe/notatka.af~lock~",
@@ -189,7 +194,6 @@
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
     "lab7_Powtórzenie/Niepotwierdzony 186478.crdownload",
     "lab7_Powtórzenie",
-    "lab6_GPG_PGP/Zadania.pdf",
     "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
     "lab4_Szyfrowanie_Asymetryczne/informacja.png",
     "zdjecia/Pasted image 20251122154502.png",
