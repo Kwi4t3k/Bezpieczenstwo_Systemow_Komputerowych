@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "dodatkowe/notatki/notatka.pdf"
+                "file": "dodatkowe/notatki/notatka_1.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "notatka"
+              "title": "notatka_1"
             }
           }
         ]
@@ -165,10 +165,10 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "741939eafee773d8",
+  "active": "4a34b86ef78c61f4",
   "lastOpenFiles": [
-    "dodatkowe/notatki/Final notatka na kolos.md",
-    "dodatkowe/notatki/Final_notatka_na_kolos.pdf",
+    "dodatkowe/notatki/Final notatka na kolos_1.md",
+    "dodatkowe/notatki/Final_notatka_na_kolos_1.pdf",
     "dodatkowe/kolosy/2024/student_1/odpowiedzi_test.md",
     "lab7_Powtórzenie/Do kolosa.md",
     "dodatkowe/Final notatka na kolos.md",
