@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "57776b449e71a8bc",
+        "id": "0ff8c2873e8076eb",
         "type": "tabs",
         "children": [
           {
-            "id": "741939eafee773d8",
+            "id": "9daa0309d5382aee",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "dodatkowe/notatki/notatka_1.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "notatka_1"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nowa karta"
             }
           }
         ]
@@ -167,17 +165,22 @@
   },
   "active": "4a34b86ef78c61f4",
   "lastOpenFiles": [
+    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/http-teoria.pdf",
+    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Niepotwierdzony 495532.crdownload",
+    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Podstawy_HTTP_v10.pdf",
+    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Niepotwierdzony 91735.crdownload",
+    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/http.pdf",
+    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Niepotwierdzony 7733.crdownload",
+    "lab8_Transport Layer Security (TLS)/Screenshot at 2025-12-08 05-06-28.png",
+    "lab8_Transport Layer Security (TLS)/Niepotwierdzony 854332.crdownload",
+    "lab8_Transport Layer Security (TLS)/ex66.zip",
+    "lab8_Transport Layer Security (TLS)/Niepotwierdzony 232281.crdownload",
+    "lab8_Transport Layer Security (TLS)/tls-teoria.pdf",
+    "lab8_Transport Layer Security (TLS)/Niepotwierdzony 409570.crdownload",
     "dodatkowe/notatki/Final notatka na kolos_1.md",
-    "dodatkowe/notatki/Final_notatka_na_kolos_1.pdf",
     "dodatkowe/kolosy/2024/student_1/odpowiedzi_test.md",
     "lab7_Powtórzenie/Do kolosa.md",
     "dodatkowe/Final notatka na kolos.md",
-    "dodatkowe/notatka.af~lock~",
-    "dodatkowe/Final_notatka_na_kolos.pdf",
-    "lab7_Powtórzenie/BSK_lab7_24_11_powtorzenie.pdf",
-    "lab7_Powtórzenie/powtorzenie.pdf",
-    "dodatkowe/notatka.pdf",
-    "dodatkowe/notatka.af",
     "lab6_GPG_PGP/Do kolosa.md",
     "lab5_Łamanie_haseł/Do Kolosa.md",
     "lab4_Szyfrowanie_Asymetryczne/Do kolosa.md",
@@ -186,14 +189,11 @@
     "lab1_Wprowadzenie_Narzędzia/Do kolosa.md",
     "lab6_GPG_PGP/Zadania.md",
     "lab5_Łamanie_haseł/Zadania.md",
-    "lab5_Łamanie_haseł/bezpieczeństwo_lab5_03_11.pdf",
     "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
     "lab3_Szyfrowanie_Symetryczne/Zadania.md",
     "lab2_Funkcje_haszujące/Zadania.md",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
-    "lab7_Powtórzenie/Niepotwierdzony 186478.crdownload",
-    "lab7_Powtórzenie",
     "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
     "lab4_Szyfrowanie_Asymetryczne/informacja.png",
     "zdjecia/Pasted image 20251122154502.png",
@@ -203,7 +203,6 @@
     "zdjecia/Pasted image 20251122153227.png",
     "zdjecia/Pasted image 20251122153213.png",
     "zdjecia/Pasted image 20251122153201.png",
-    "Pasted image 20251122153106.png",
     "Final notatka na kolos.md"
   ]
 }
