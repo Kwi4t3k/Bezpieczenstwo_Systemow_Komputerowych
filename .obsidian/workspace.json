@@ -11,10 +11,14 @@
             "id": "9daa0309d5382aee",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nowa karta"
+              "title": "Zadania"
             }
           }
         ]
@@ -163,8 +167,10 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "4a34b86ef78c61f4",
+  "active": "9daa0309d5382aee",
   "lastOpenFiles": [
+    "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
+    "lab4_Szyfrowanie_Asymetryczne/informacja.png",
     "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/http-teoria.pdf",
     "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Niepotwierdzony 495532.crdownload",
     "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Podstawy_HTTP_v10.pdf",
@@ -176,7 +182,6 @@
     "lab8_Transport Layer Security (TLS)/ex66.zip",
     "lab8_Transport Layer Security (TLS)/Niepotwierdzony 232281.crdownload",
     "lab8_Transport Layer Security (TLS)/tls-teoria.pdf",
-    "lab8_Transport Layer Security (TLS)/Niepotwierdzony 409570.crdownload",
     "dodatkowe/notatki/Final notatka na kolos_1.md",
     "dodatkowe/kolosy/2024/student_1/odpowiedzi_test.md",
     "lab7_Powtórzenie/Do kolosa.md",
@@ -194,8 +199,6 @@
     "lab3_Szyfrowanie_Symetryczne/Zadania.md",
     "lab2_Funkcje_haszujące/Zadania.md",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
-    "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
-    "lab4_Szyfrowanie_Asymetryczne/informacja.png",
     "zdjecia/Pasted image 20251122154502.png",
     "zdjecia/Pasted image 20251122154218.png",
     "zdjecia/Pasted image 20251122153947.png",
