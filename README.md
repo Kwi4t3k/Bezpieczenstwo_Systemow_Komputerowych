@@ -14,3 +14,4 @@
 
 1. [Transport Layer Security (TLS)](lab8_Transport_Layer_Security_(TLS))
 2. [Wprowadzenie do protokołu HTTP / testowania web aplikacji](lab9_Wprowadzenie_do_protokołu_HTTP_i_testowania_web_aplikacji)
+3. [XSS](lab10_XSS)
