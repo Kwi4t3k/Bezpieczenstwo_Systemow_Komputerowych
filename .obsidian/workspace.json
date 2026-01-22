@@ -13,12 +13,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
-                "mode": "source",
+                "file": "lab8_Transport_Layer_Security_(TLS)/Zadania.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Zadania"
+            }
+          },
+          {
+            "id": "ad89552dab23bee0",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "lab8_Transport_Layer_Security_(TLS)/BSK_lab8_08_12.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "BSK_lab8_08_12"
+            }
+          },
+          {
+            "id": "f1ca57292fc0e312",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "lab8_Transport_Layer_Security_(TLS)/tls.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "tls"
             }
           }
         ]
@@ -158,10 +182,10 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "graph:Otwórz podgląd grafu": false,
+      "daily-notes:Otwórz dzisiejszy dziennik": false,
       "switcher:Otwórz okno szybkiego wyboru": false,
-      "graph:Otwórz graf": false,
       "canvas:Stwórz nową tablicę": false,
-      "daily-notes:Otwórz codzienną notatkę": false,
       "templates:Wstaw szablon": false,
       "command-palette:Otwórz listę poleceń": false,
       "bases:Stwórz nową bazę danych": false
@@ -169,19 +193,28 @@
   },
   "active": "9daa0309d5382aee",
   "lastOpenFiles": [
-    "lab4_Szyfrowanie_Asymetryczne/rozwiazania.png",
-    "lab4_Szyfrowanie_Asymetryczne/informacja.png",
+    "lab8_Transport_Layer_Security_(TLS)/BSK_lab8_08_12.pdf",
+    "lab8_Transport_Layer_Security_(TLS)/Zadania.md",
+    "lab8_Transport_Layer_Security_(TLS)/tls.pdf",
+    "Pasted image 20260122181220.png",
+    "Pasted image 20260122180222.png",
+    "Pasted image 20260122180053.png",
+    "Pasted image 20260122175706.png",
+    "Pasted image 20260122175604.png",
+    "Pasted image 20260122175512.png",
+    "Pasted image 20260122175449.png",
+    "Pasted image 20260122175425.png",
+    "zdjecia/Pasted image 20260122175017.png",
+    "zdjecia/Pasted image 20260122175001.png",
+    "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
     "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/http-teoria.pdf",
     "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Niepotwierdzony 495532.crdownload",
     "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Podstawy_HTTP_v10.pdf",
     "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Niepotwierdzony 91735.crdownload",
     "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/http.pdf",
     "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Niepotwierdzony 7733.crdownload",
-    "lab8_Transport Layer Security (TLS)/Screenshot at 2025-12-08 05-06-28.png",
     "lab8_Transport Layer Security (TLS)/Niepotwierdzony 854332.crdownload",
     "lab8_Transport Layer Security (TLS)/ex66.zip",
-    "lab8_Transport Layer Security (TLS)/Niepotwierdzony 232281.crdownload",
-    "lab8_Transport Layer Security (TLS)/tls-teoria.pdf",
     "dodatkowe/notatki/Final notatka na kolos_1.md",
     "dodatkowe/kolosy/2024/student_1/odpowiedzi_test.md",
     "lab7_Powtórzenie/Do kolosa.md",
@@ -195,17 +228,9 @@
     "lab6_GPG_PGP/Zadania.md",
     "lab5_Łamanie_haseł/Zadania.md",
     "lab5_Łamanie_haseł/Hashcat Cheat Sheet.md",
-    "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
     "lab3_Szyfrowanie_Symetryczne/Zadania.md",
     "lab2_Funkcje_haszujące/Zadania.md",
     "lab1_Wprowadzenie_Narzędzia/Zadania.md",
-    "zdjecia/Pasted image 20251122154502.png",
-    "zdjecia/Pasted image 20251122154218.png",
-    "zdjecia/Pasted image 20251122153947.png",
-    "zdjecia/Pasted image 20251122153900.png",
-    "zdjecia/Pasted image 20251122153227.png",
-    "zdjecia/Pasted image 20251122153213.png",
-    "zdjecia/Pasted image 20251122153201.png",
     "Final notatka na kolos.md"
   ]
 }
