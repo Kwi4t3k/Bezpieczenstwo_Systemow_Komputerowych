@@ -284,3 +284,169 @@ trzeba szukać jakichś różnic na przykład w długości
 ![[Pasted image 20260123201013.png]]
 
 ![[Pasted image 20260123201040.png]]
+
+## CROSS SITE SCRIPTING (XSS) - ZADANIA
+![[Pasted image 20260124140053.png]]
+
+a)
+
+![[Pasted image 20260124141435.png]]
+
+Na stronie widać że tekst jest do nas odbijany przez serwer więc do ataku pasuje Reected XSS
+
+![[Pasted image 20260124141757.png]]
+
+![[Pasted image 20260124141907.png]]
+
+kod strony:
+![[Pasted image 20260124142140.png]]
+
+to jest niebezpieczne ponieważ od pobrania inputu przez użytkownika do wyświetlenia nic nie robi się z tymi danymi
+
+b)
+
+funkcja escape robi to, że znaki są zamieniane w taki sposób że nie mogą się wykonać tylko są encjami
+
+![[Pasted image 20260124142603.png]]
+
+![[Pasted image 20260124142823.png]]
+
+![[Pasted image 20260124140103.png]]
+
+dane do logowania: hasło - password
+![[Pasted image 20260124143239.png]]
+
+zmiana poziomów:
+![[Pasted image 20260124143454.png]]
+
+- low
+![[Pasted image 20260124143601.png]]
+![[Pasted image 20260124143638.png]]
+![[Pasted image 20260124143711.png]]
+
+- medium
+![[Pasted image 20260124143759.png]]
+
+działa jak napiszemy `<SCRIPT>` capsem, bo jest zabezpieczenie na tylko `<script>` oraz nie działa funkcja rekurencyjnie więc zadziała `<scr<script>ipt>alert("a")</scr</script>ipt>`
+![[Pasted image 20260124143819.png]]
+![[Pasted image 20260124143840.png]]
+
+- high
+![[Pasted image 20260124162117.png]]
+![[Pasted image 20260124162142.png]]
+![[Pasted image 20260124162319.png]]
+słowo script zostało zamienione na ciąg znaków
+
+- impossible
+![[Pasted image 20260124162734.png]]
+wszystkie znaki zostają zmienione na encje
+
+![[Pasted image 20260124140139.png]]
+
+Jeśli mamy ograniczenie długości wiadomości to w firefox można `CTRL + SHIFT + K` i z narzędzi dla twórców witryn można zmienić kod strony i zmienić długość pola
+
+- low (wszystkie inputy są od razu przekazywane do bazy danych)
+![[Pasted image 20260124163420.png]]
+
+- medium
+![[Pasted image 20260124163713.png]]
+
+- high
+![[Pasted image 20260124163743.png]]
+
+- impossible
+![[Pasted image 20260124163815.png]]
+
+![[Pasted image 20260124140155.png]]
+
+- low
+![[Pasted image 20260124164652.png]]
+![[Pasted image 20260124165031.png]]
+
+- medium
+![[Pasted image 20260124165236.png]]
+![[Pasted image 20260124165526.png]]
+
+- high
+![[Pasted image 20260124165325.png]]
+![[Pasted image 20260124165504.png]]
+
+- impossible
+![[Pasted image 20260124165428.png]]
+![[Pasted image 20260124165442.png]]
+
+## SQL Injection - ZADANIA
+![[Pasted image 20260124171408.png]]
+
+![[Pasted image 20260124184224.png]]
+![[Pasted image 20260124184313.png]]
+![[Pasted image 20260124184333.png]]
+![[Pasted image 20260124184416.png]]
+
+![[Pasted image 20260124171421.png]]
+
+![[Pasted image 20260124185642.png]]
+![[Pasted image 20260124185755.png]]
+
+![[Pasted image 20260124171430.png]]
+
+`https://www.youtube.com/watch?v=0-D-e66U2Z0`
+
+![[Pasted image 20260124192931.png]]
+![[Pasted image 20260124193015.png]]
+
+![[Pasted image 20260124171438.png]]
+
+`https://www.youtube.com/watch?v=frymuDxKwmc&list=PL8j1j35M7wtKXpTBE6V1RlN_pBZ4StKZw&index=48`
+
+trzeba dodać jakieś review
+![[Pasted image 20260124194047.png]]
+![[Pasted image 20260124194334.png]]
+![[Pasted image 20260124194742.png]]
+
+teraz wszystkie komentarze na stronie to `:D`
+
+![[Pasted image 20260124194821.png]]
+
+![[Pasted image 20260124171449.png]]
+
+- low
+
+![[Pasted image 20260124195438.png]]
+![[Pasted image 20260124195450.png]]
+
+to jest znak, że aplikacja jest podatna na tego typu atak
+
+![[Pasted image 20260124195617.png]]
+
+szukanie nazw kolumn `' UNION SELECT table_name, NULL FROM information_schema.tables #`
+
+![[Pasted image 20260124201057.png]]
+
+pobranie haseł `' UNION SELECT user, password FROM users #`
+
+![[Pasted image 20260124201308.png]]
+
+![[Pasted image 20260124195803.png]]
+
+DODATKOWO sprawdzenie wersji bazy danych `' UNION SELECT version(), database() FROM users #`
+![[Pasted image 20260124201517.png]]
+
+- medium
+
+
+
+- high
+
+
+
+![[Pasted image 20260124171458.png]]
+
+możemy użyć payload `1' and sleep(5) #` i jeżeli po pięciu sekundach to się wykona, a nie od razu to znaczy że jest podatność
+
+
+
+![[Pasted image 20260124201726.png]]
+
+![[Pasted image 20260124171508.png]]
+

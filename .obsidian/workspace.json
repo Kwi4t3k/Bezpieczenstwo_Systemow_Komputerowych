@@ -4,57 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "0ff8c2873e8076eb",
+        "id": "c2fee799db263d5e",
         "type": "tabs",
         "children": [
           {
-            "id": "ad89552dab23bee0",
+            "id": "cee2db7abe4717bb",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "lab8_Transport_Layer_Security_(TLS)/BSK_lab8_08_12.pdf"
+                "file": "lab11_SQLi/lab-sqli.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "BSK_lab8_08_12"
+              "title": "lab-sqli"
             }
           },
           {
-            "id": "f1ca57292fc0e312",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "lab8_Transport_Layer_Security_(TLS)/tls.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "tls"
-            }
-          },
-          {
-            "id": "600d7cb633f9fc04",
+            "id": "071d1bad691b2f8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lab8_Transport_Layer_Security_(TLS)/Zadania.md",
+                "file": "dodatkowe/notatki/Notatka kolos 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zadania"
-            }
-          },
-          {
-            "id": "c2816517d662c824",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zdjecia/Pasted image 20260123145755.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260123145755"
+              "title": "Notatka kolos 2"
             }
           }
         ],
@@ -204,70 +180,31 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "floating": {
-    "id": "460d946551ed44c6",
-    "type": "floating",
-    "children": [
-      {
-        "id": "93f6d82f012f166f",
-        "type": "window",
-        "children": [
-          {
-            "id": "a2fd55fb9ffcbd1e",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "9daa0309d5382aee",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "dodatkowe/notatki/Notatka kolos 2.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Notatka kolos 2"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 553,
-        "y": 6,
-        "width": 873,
-        "height": 604,
-        "maximize": true,
-        "zoom": 0.5
-      }
-    ]
-  },
-  "active": "f1ca57292fc0e312",
+  "active": "071d1bad691b2f8d",
   "lastOpenFiles": [
-    "lab8_Transport_Layer_Security_(TLS)/Zadania.md",
-    "zdjecia/Pasted image 20260123145755.png",
+    "zdjecia/Pasted image 20260124201726.png",
     "dodatkowe/notatki/Notatka kolos 2.md",
-    "lab8_Transport_Layer_Security_(TLS)/BSK_lab8_08_12.pdf",
-    "Pasted image 20260123145029.png",
-    "zdjecia/Pasted image 20260123144904.png",
+    "dodatkowe/notatki/Notatka kolos 2.pdf",
+    "lab11_SQLi/lab-sqli.pdf",
+    "zdjecia/Pasted image 20260124201517.png",
+    "zdjecia/Pasted image 20260124201308.png",
+    "zdjecia/Pasted image 20260124201057.png",
+    "zdjecia/Pasted image 20260124195803.png",
+    "zdjecia/Pasted image 20260124195617.png",
+    "zdjecia/Pasted image 20260124195450.png",
+    "zdjecia/Pasted image 20260124195438.png",
+    "zdjecia/Pasted image 20260124194821.png",
+    "zdjecia/Pasted image 20260124194742.png",
+    "lab10_XSS/podatnosc_XSS.pdf",
+    "lab10_XSS/BSK_lab10_12_01.pdf",
+    "Pasted image 20260124143638.png.~tmp",
+    "Pasted image 20260124141907.png.~tmp",
+    "lab10_XSS/xss.pdf",
+    "lab9_Wprowadzenie_do_protokołu_HTTP_i_testowania_web_aplikacji/http.pdf",
+    "lab9_Wprowadzenie_do_protokołu_HTTP_i_testowania_web_aplikacji/BSK_lab9_15_12.pdf",
+    "lab8_Transport_Layer_Security_(TLS)/Zadania.md",
     "lab8_Transport_Layer_Security_(TLS)/tls.pdf",
-    "zdjecia/Pasted image 20260123142436.png",
-    "zdjecia/Pasted image 20260123141650.png",
-    "zdjecia/Pasted image 20260123141322.png",
-    "zdjecia/Pasted image 20260123141117.png",
-    "zdjecia/Pasted image 20260123141109.png",
-    "zdjecia/Pasted image 20260123141058.png",
-    "zdjecia/Pasted image 20260123141044.png",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
-    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/http-teoria.pdf",
-    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Niepotwierdzony 495532.crdownload",
-    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Podstawy_HTTP_v10.pdf",
-    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Niepotwierdzony 91735.crdownload",
-    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/http.pdf",
-    "lab9_Wprowadzenie do protokołu HTTP i testowania web aplikacji/Niepotwierdzony 7733.crdownload",
-    "lab8_Transport Layer Security (TLS)/Niepotwierdzony 854332.crdownload",
-    "lab8_Transport Layer Security (TLS)/ex66.zip",
     "dodatkowe/notatki/Final notatka na kolos_1.md",
     "dodatkowe/kolosy/2024/student_1/odpowiedzi_test.md",
     "lab7_Powtórzenie/Do kolosa.md",
