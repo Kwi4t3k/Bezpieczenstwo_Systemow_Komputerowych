@@ -91,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50152587890625
+    "width": 253.50152587890625,
+    "collapsed": true
   },
   "right": {
     "id": "4890cb0c96347ede",
@@ -182,6 +183,13 @@
   },
   "active": "071d1bad691b2f8d",
   "lastOpenFiles": [
+    "dodatkowe/notatki/inne/stare/Zadania.pdf",
+    "dodatkowe/notatki/inne/stare",
+    "dodatkowe/notatki/inne/Nowy folder",
+    "dodatkowe/notatki/inne/notatka.af",
+    "dodatkowe/notatki/inne/notatka_1.pdf",
+    "dodatkowe/notatki/inne",
+    "dodatkowe/notatki/Nowy folder",
     "zdjecia/Pasted image 20260124201726.png",
     "dodatkowe/notatki/Notatka kolos 2.md",
     "dodatkowe/notatki/Notatka kolos 2.pdf",
@@ -197,13 +205,7 @@
     "zdjecia/Pasted image 20260124194742.png",
     "lab10_XSS/podatnosc_XSS.pdf",
     "lab10_XSS/BSK_lab10_12_01.pdf",
-    "Pasted image 20260124143638.png.~tmp",
-    "Pasted image 20260124141907.png.~tmp",
-    "lab10_XSS/xss.pdf",
-    "lab9_Wprowadzenie_do_protokołu_HTTP_i_testowania_web_aplikacji/http.pdf",
-    "lab9_Wprowadzenie_do_protokołu_HTTP_i_testowania_web_aplikacji/BSK_lab9_15_12.pdf",
     "lab8_Transport_Layer_Security_(TLS)/Zadania.md",
-    "lab8_Transport_Layer_Security_(TLS)/tls.pdf",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
     "dodatkowe/notatki/Final notatka na kolos_1.md",
     "dodatkowe/kolosy/2024/student_1/odpowiedzi_test.md",
