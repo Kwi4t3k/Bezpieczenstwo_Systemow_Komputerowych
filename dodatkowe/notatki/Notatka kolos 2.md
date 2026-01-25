@@ -636,7 +636,47 @@ trzeba szukać jakichś różnic na przykład w długości
 ![[Pasted image 20260123201040.png]]
 
 ## CROSS SITE SCRIPTING (XSS) - TEORIA
+> Atak Cross-Site Scripting (XSS) jest jednym z najczęstszych rodzajów ataków w Internecie, który polega na wstrzykiwaniu złośliwego kodu JavaScript do stron internetowych odwiedzanych przez innych użytkowników. Dzięki XSS, atakujący może przejąć kontroli nad sesjami użytkowników, kraść dane, a także wprowadzać inne formy złośliwego działania.
 
+### Reected XSS
+Reected XSS (zwany tak»e Non-Persistent XSS) jest rodzajem ataku, który zachodzi, gdy złośliwy kod JavaScript jest wstrzykiwany w parametrach URL lub w żądaniach HTTP (np. w formularzach). Kod ten zostaje natychmiast przetworzony i odesłany z powrotem do przeglądarki użytkownika w odpowiedzi serwera, a przeglądarka wykonuje go, myśląc, że jest to bezpieczny skrypt. Załóżmy, że mamy aplikację, która przyjmuje dane w parametrze URL, jak np.
+
+`http : //example.com/search?q =< script > alert( 0XSS0 ) < /script >`
+
+Jeśli serwer odpowiednio nie sanitizuje danych wejściowych i odsyła je bezpośrednio do przeglądarki, wówczas złośliwy skrypt w parametrze q zostanie wykonany w kontekście strony.
+
+Aby zabezpieczyć aplikację przed Reflected XSS, należy:
+ - **Walidacja i sanitizacja danych wejściowych:** Wszystkie dane pochodzące od użytkownika, w tym parametry URL i dane formularzy, powinny być starannie walidowane i oczyszczane z potencjalnie niebezpiecznych znaków (np. <, >, &, ", ').
+- **Używanie nagłówków Content Security Policy (CSP):** CSP pozwala określić, które źródła mogą ładować skrypty, ograniczając tym samym możliwość wstrzykiwania złośliwego kodu.
+- **Escape danych przed wyświetleniem:** Przed wyświetleniem danych na stronie, należy je escapować (zamienić specjalne znaki na ich odpowiedniki w HTML).
+
+### Stored XSS
+Stored XSS (zwany także Persistent XSS) zachodzi, gdy złośliwy kod JavaScript jest wstrzykiwany do aplikacji i za- pisywany na serwerze, np. w bazie danych, pliku logu lub innym trwałym magazynie danych. Kiedy inny użytkownik odwiedza stronę, która wyświetla te dane, złośliwy skrypt jest automatycznie wykonany przez jego przeglądarkę. Za- łóżmy, że użytkownik wpisuje w formularzu komentarz, który zawiera złośliwy skrypt:
+
+`<script> alert('XSS') < /script>`
+
+Jeśli aplikacja zapisuje ten komentarz w bazie danych bez odpowiedniego filtrowania, a następnie wyświetla go innym użytkownikom, to skrypt zostanie wykonany na komputerze odwiedzającego stronę użytkownika.
+
+Aby zabezpieczyć aplikację przed Stored XSS, należy:
+- **Sanitizacja danych przy zapisie:** Wszystkie dane wprowadzane przez użytkowników powinny być sanitizowane przed zapisaniem ich w bazie danych, eliminując wszelkie tagi HTML oraz skrypty JavaScript.
+- **Escape danych przy wyświetlaniu:** Zanim dane zostaną wyświetlone w HTML, należy je odpowiednio escape 'ować, aby zapobiec wykonaniu wstrzykniętych skryptów.
+- **Używanie odpowiednich nagłówków HTTP:** Nagłówki takie jak X-XSS-Protection mogą pomóc w ochronie przed niektórymi formami XSS, choć nie zastępują one pełnej walidacji i sanitizacji danych.
+
+### DOM-based XSS
+DOM-based XSS występuje, gdy złośliwy skrypt jest wstrzykiwany do aplikacji przez manipulację Document Object Model (DOM) w przeglądarkce, bez konieczności interakcji z serwerem. Złośliwy kod jest uruchamiany w momencie, gdy aplikacja webowa przetwarza dane wejściowe użytkownika bez odpowiedniego oczyszczania, a te dane trafiają do manipulacji DOM.
+
+W przypadku DOM-based XSS, atak może wyglądać tak:
+
+`http://example.com/#q=< script > alert('XSS') </script>`
+
+Aplikacja może następnie wziąć parametr q z URL i użyć go do manipulacji DOM, np. wstawiając go jako część treści strony, co skutkuje wykonaniem skryptu w przeglądarce.
+
+Aby zabezpieczyć aplikację przed DOM-based XSS, należy:
+- **Walidacja danych wejściowych:** Ważne jest, aby wszystkie dane wejściowe, które mogą być użyte w manipulacji DOM, były odpowiednio walidowane i oczyszczane.
+- **Używanie bezpiecznych metod manipulacji DOM:** Zamiast bezpośredniego manipulowania HTML za po- mocą takich metod jak innerHTML, lepiej używać metod takich jak textContent lub createElement, które nie interpretują danych jako HTML.
+- **CSP i nagłówki bezpieczeństwa:** Używanie polityki Content Security Policy oraz innych nagłówków, takich jak X-XSS-Protection, może pomóc w ochronie przed DOM-based XSS.
+
+Ataki XSS stanowią poważne zagrożenie dla bezpieczeństwa aplikacji webowych. Dzielą się one na trzy główne typy: Reflected XSS, Stored XSS oraz DOM-based XSS, z których każdy wymaga innych metod zabezpieczeń. Aby skutecznie chronić aplikacje przed tymi atakami, należy stosować odpowiednią walidację i sanitizację danych wejściowych, korzy- stać z polityk bezpieczeństwa (takich jak CSP) oraz używać bezpiecznych metod manipulacji DOM. Regularne audyty bezpieczeństwa i testy penetracyjne są również kluczowe w zapewnianiu ochrony przed XSS.
 
 ## CROSS SITE SCRIPTING (XSS) - ZADANIA
 ![[Pasted image 20260124140053.png]]
@@ -727,6 +767,123 @@ Jeśli mamy ograniczenie długości wiadomości to w firefox można `CTRL + SHIF
 - impossible
 ![[Pasted image 20260124165428.png]]
 ![[Pasted image 20260124165442.png]]
+
+## SQL Injection - TEORIA
+SQL Injection (SQLi) to jedna z najczęstszych i najgroźniejszych podatności aplikacji internetowych, która polega na wstrzykiwaniu złośliwych zapytań SQL do bazy danych. Skutkiem ataku może być kradzież danych, ich modyfikacja, a nawet przejęcie pełnej kontroli nad serwerem.
+
+### Identyfikacja podatności
+Aby sprawdzić, czy aplikacja jest podatna na SQL Injection, można wykonać następujące kroki:
+
+#### Testowanie wejść użytkownika
+Podatność najczęściej występuje w miejscach, gdzie dane wprowadzane przez użytkownika są wykorzystywane w zapy- taniach SQL, np. w formularzach, parametrach URL, nagłówkach HTTP czy plikach cookie.
+
+- Spróbuj wprowadzić znaki specjalne SQL, takie jak ', ", ;, - w polach wejściowych.
+- Zastosuj typowe payloady testowe, np.:
+```python
+' OR '1'='1'; -- 
+" OR "1"="1"; -- 
+' UNION SELECT NULL , NULL , NULL ; --
+```
+
+#### Obserwowanie odpowiedzi serwera
+Reakcja aplikacji na powyższe dane może wskazywać na podatność. Typowe objawy:
+- Błędy bazy danych (np. SQL syntax error).
+- Zmiana zachowania aplikacji (np. zwrócenie dodatkowych danych lub pominięcie autoryzacji).
+
+### Przykładowy atak
+Załóżmy, że mamy zapytanie:
+```python
+SELECT * FROM users WHERE username = '$username ' AND password = '$password ';
+```
+Podstawiaj¡c payload ' OR '1'='1', atakujący może ominąć uwierzytelnianie:
+```python
+SELECT * FROM users WHERE username = '' OR '1'='1' AND password = '' OR '1'='1';
+```
+
+### Jak się chronić?
+Poniżej przedstawiono najlepsze praktyki w zakresie ochrony przed SQL Injection:
+
+- Używanie przygotowanych zapytań (Prepared Statements) - Zamiast dynamicznego budowania zapytań SQL, należy używać zapytań parametryzowanych. Przykład w języku Python z wykorzystaniem biblioteki sqlite3: 
+```python
+cursor . execute (" SELECT * FROM users WHERE username = ? AND password = ?", ( username , password ))
+```
+- Walidacja i sanitacja danych wejściowych
+	- Ogranicz dane wejściowe do oczekiwanych wartości (np. używając regexów).
+	- Odrzuć znaki specjalne, które mogą być używane w zapytaniach SQL.
+- Zarządzanie uprawnieniami
+	- Ogranicz uprawnienia użytkowników bazy danych.
+	- Aplikacja powinna korzystać z konta bazy danych o minimalnych uprawnieniach.
+- Używanie zapór aplikacyjnych (WAF) - Zapory aplikacyjne mogą blokować znane wzorce ataków SQL Injec- tion.
+- Regularne testy bezpieczeństwa - Przeprowadzaj regularne audyty i testy penetracyjne w celu wykrycia po- tencjalnych podatności.
+
+### Typy ataków SQL Injection
+SQL Injection (SQLi) występuje w różnych formach w zależności od metod i celów atakującego. W niniejszej notatce przedstawiono najczęstsze typy ataków SQLi wraz z przykładami.
+
+### Klasyczny SQL Injection
+Ten typ ataku polega na wstrzyknięciu złośliwego kodu SQL bezpośrednio do zapytania. Wykorzystuje luki w sanitacji danych wejściowych.
+
+##### Przykład:
+Zapytanie SQL w aplikacji:
+```python
+SELECT * FROM users WHERE username = '$username ' AND password = '$password ';
+```
+Payload atakującego:
+```python
+' OR '1'='1
+```
+Wynikowe zapytanie SQL:
+```python
+SELECT * FROM users WHERE username = '' OR '1'='1' AND password = '' OR '1'='1';
+```
+To zapytanie zwróci wszystkie rekordy w tabeli users, omijając uwierzytelnianie.
+
+### SQL Union Injection
+Atak ten wykorzystuje operator UNION, aby łączyć wyniki dwóch lub więcej zapytań. Atakujący może uzyskać dodatkowe dane z bazy.
+
+##### Przykład:
+Zapytanie SQL w aplikacji:
+```python
+SELECT id , name FROM users WHERE id = '$id ';
+```
+Payload atakującego:
+```python
+1 UNION SELECT null , database ();
+```
+Wynikowe zapytanie SQL:
+```python
+SELECT id , name FROM users WHERE id = '1' UNION SELECT null , database ();
+```
+
+To zapytanie zwraca nazwę aktualnie używanej bazy danych.
+
+### Blind SQL Injection
+Blind SQL Injection stosowany jest, gdy aplikacja nie zwraca wyników zapytania, ale zachowanie serwera wskazuje na poprawność zapytania.
+
+##### Przykład:
+Zapytanie SQL w aplikacji:
+```python
+SELECT * FROM users WHERE username = '$username ';
+```
+Payload atakującego:
+```python
+' AND ( SELECT 1 FROM dual WHERE database () = 'test ') --
+```
+Jeśli aplikacja działa normalnie, można założyć, że baza danych nazywa się test. Blind SQL Injection wymaga iteracyjnego testowania.
+
+### Time-Based Blind SQL Injection
+Ten rodzaj ataku opiera się na wykorzystaniu opóźnień w odpowiedziach serwera do uzyskania informacji.
+
+##### Przykład:
+Zapytanie SQL w aplikacji:
+```python
+SELECT * FROM users WHERE username = '$username ';
+```
+Payload atakującego:
+```python
+' OR IF( SUBSTRING ( database () ,1 ,1)= 't', SLEEP (5) , 0); --
+```
+
+Jeśli serwer opóźnia odpowiedź o 5 sekund, atakujący wie, że pierwsza litera nazwy bazy danych to t. Atak wymaga iteracyjnego odpytywania.
 
 ## SQL Injection - ZADANIA
 ![[Pasted image 20260124171408.png]]
