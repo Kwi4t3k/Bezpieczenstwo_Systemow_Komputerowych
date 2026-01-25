@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cee2db7abe4717bb",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "lab11_SQLi/lab-sqli.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "lab-sqli"
-            }
-          },
-          {
             "id": "071d1bad691b2f8d",
             "type": "leaf",
             "state": {
@@ -33,8 +21,7 @@
               "title": "Notatka kolos 2"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,6 +170,9 @@
   },
   "active": "071d1bad691b2f8d",
   "lastOpenFiles": [
+    "Pasted image 20260125135412.png",
+    "lab11_SQLi/lab-sqli.pdf",
+    "dodatkowe/notatki/Notatka kolos 2.md",
     "dodatkowe/notatki/inne/stare/Zadania.pdf",
     "dodatkowe/notatki/inne/stare",
     "dodatkowe/notatki/inne/Nowy folder",
@@ -191,9 +181,7 @@
     "dodatkowe/notatki/inne",
     "dodatkowe/notatki/Nowy folder",
     "zdjecia/Pasted image 20260124201726.png",
-    "dodatkowe/notatki/Notatka kolos 2.md",
     "dodatkowe/notatki/Notatka kolos 2.pdf",
-    "lab11_SQLi/lab-sqli.pdf",
     "zdjecia/Pasted image 20260124201517.png",
     "zdjecia/Pasted image 20260124201308.png",
     "zdjecia/Pasted image 20260124201057.png",
@@ -204,7 +192,6 @@
     "zdjecia/Pasted image 20260124194821.png",
     "zdjecia/Pasted image 20260124194742.png",
     "lab10_XSS/podatnosc_XSS.pdf",
-    "lab10_XSS/BSK_lab10_12_01.pdf",
     "lab8_Transport_Layer_Security_(TLS)/Zadania.md",
     "lab4_Szyfrowanie_Asymetryczne/Zadania.md",
     "dodatkowe/notatki/Final notatka na kolos_1.md",

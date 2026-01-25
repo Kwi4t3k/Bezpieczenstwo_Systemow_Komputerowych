@@ -171,6 +171,356 @@ przed odszyfrowaniem
 po odszyfrowaniu
 ![[Pasted image 20260123172011.png]]
 
+## Wprowadzenie do protokołu HTTP / testowania web aplikacji - TEORIA
+> Protokół HTTP (Hypertext Transfer Protocol, RFC 2616 oraz od 7230 do 7235) - protokół warstwy aplikacji, wykorzystujący na niższej warstwie (zazwyczaj) gniazda TCP/IP oraz 2 domyślne porty: port niezabezpieczony 80 i port zabezpieczony: 443.
+
+Podstawowe informacje: 
+- Protokół HTTP jest protokołem wykorzystywanym do przesyłania plików (ogólnie mówiąc: zasobów) w sieci WWW (World Wide Web), bez względu na to, czy zasobem jest plik HTML, plik graficzny, wynik zapytania, czy cokolwiek innego 
+- Protokół HTTP, do wersji 1.1, jest protokołem tekstowym, gdzie komendy protokołu, podobnie jak w SMTP, POP3 czy IMAP są komendami tekstowymi, zrozumiałymi dla człowieka 
+- HTTP to protokół typu zapytanie-odpowiedź. Zapytanie, wysyłane przez klienta, zawiera informację o żądanym zasobie. Odpowiedź, wysyłana przez serwer, zawiera treść zasobu. Jeśli serwer nie jest w stanie zwrócić odpytywanego zasobu, odpowiedź zawiera kod reprezentujący powód, dla którego zasób nie mógł być wysłany (np. zasób nie istnieje) 
+- Formaty zapytania i odpowiedzi HTTP są do siebie podobne; zarówno zapytanie, jak i odpowiedź HTTP zawierają (linia początkowa i nagłówki powinny się kończyć parą znaków CRLF, czyli \r\n): 
+	- linię początkową 
+	- 0 lub więcej nagłówków 
+	- pustą linię (CRLF, czyli \r\n) 
+	- opcjonalne ciało wiadomości
+
+Przykład:
+>linia poczatkowa, inna dla zadania, inna dla odpowiedzi \r\n
+>naglowek1: wartosc1 \r\n
+>naglowek2: wartosc2 \r\n
+>naglowek3: wartosc3 \r\n
+>\r\n
+>cialo wiadomosci, moze sie skladac z 1 lub wielu linii, lub moze byc puste
+
+- Nagłówki HTTP to wszelkie komendy używane do komunikacji między przeglądarką WWW (klientem) a serwerem. Nagłówki są to właściwości żądania i odpowiedzi przesyłane wraz z samą wiadomością. Służą one przede wszystkim do sterowania zachowaniem serwera oraz przeglądarki przez nadawcę wiadomości.
+- Jeśli klient wysyła żądanie do serwera HTTP, żądanie powinno zawsze być zakończone parą znaków CRLF (czyli \r\n)
+- Serwer odsyłając odpowiedź HTTP nie określa za pomocą żadnych specjalnych znaków końca odsyłanej odpowiedzi. W przypadku, gdy chcemy mieć pewność, że odebraliśmy całą odpowiedź serwera HTTP, musimy parsować odebrane nagłówki (Content-Length lub Transfer-Encoding), w których może znajdować się informacja o tym, jaki jest rozmiar odpowiedzi serwera, i użyć tej inforamcji do odebrania całej wiadomości. W przypadku, gdy serwer w odpowiedzi HTTP nie odeśle żadnego z powyższych nagłówków, aby mieć pewność odebrania całej odpowiedzi od serwera, musimy odbierać dane, dopóki serwer nie zakończy / zamknie połącznia. Zgodnie z formatem żądania i odpowiedzi HTTP, nagłówki od ciała oddzielają znaki CRLF CRLF (czyli \r\n \r\n).
+
+### Podstawowa komunikacja HTTP
+![[Pasted image 20260125135412.png]]
+
+### Żądania HTTP
+
+- Ogólny format żądania HTTP (pola oddzielone spacjami):
+	>Method Request-URI HTTP-Version \r\n
+HEADER1: VALUE1 \r\n 
+HEADER2: VALUE2 \r\n 
+... 
+HEADERX: VALUEX \r\n
+\r\n 
+BODY 
+\r\n
+
+	gdzie: 
+	- Method - to metoda żądania, dozwolone metody HTTP:
+		- GET – pobranie zasobu wskazanego przez Request-URI
+		- HEAD – pobiera informacje o zasobie, stosowane do sprawdzania dostępności zasobu
+		- PUT – przyjęcie danych przesyłanych od klienta do serwera, najczęściej aby zaktualizować wartość zasobu,
+		- POST – przyjęcie danych przesyłanych od klienta do serwera (np. wysyłanie zawartości formularzy),
+		- DELETE – żądanie usunięcia zasobu,
+		- OPTIONS – informacje o opcjach i wymaganiach dotyczących zasobu,
+		- TRACE – diagnostyka, analiza kanału komunikacyjnego,
+		- CONNECT – żądanie przeznaczone dla serwerów pośredniczących pełniących funkcje tunelowania,
+		- PATCH – aktualizacja części zasobu (np. jednego pola).
+	- Request-URI - to ścieżka do zasobu na serwerze, która może zawierać dodatkowo parametry HTTP oraz fragment (za znakiem #),
+	- HTTP-Version - wersja protokołu HTTP, np. HTTP/1.0, HTTP/1.1, HTTP/2.0
+	- HEADER1, HEADER2, ..., HEADERX - nagłówki HTTP, VALLUE1, VALUE2, ..., VALUEX - wartości konkretnych nagłówków
+	- BODY - opcjonalne ciało żądania
+---
+#### Metody HTTP (co robią i po co) - INNY OPIS
+
+- **GET** – pobranie zasobu (np. strona, JSON). Nie powinno zmieniać danych.
+    
+- **POST** – utworzenie zasobu / wysłanie danych (np. formularz, logowanie).
+    
+- **PUT** – wstawienie lub pełna aktualizacja zasobu (zwykle “cały obiekt”).
+    
+- **PATCH** – częściowa aktualizacja (np. zmiana jednego pola).
+    
+- **DELETE** – usunięcie zasobu.
+    
+- **HEAD** – jak GET, ale bez body (tylko nagłówki) – np. sprawdzanie, czy plik istnieje.
+    
+- **OPTIONS** – jakie metody są dozwolone; używane m.in. w CORS (przeglądarki robią “preflight”).
+    
+- **CONNECT** – tunel (np. HTTPS przez proxy).
+    
+- **TRACE** – diagnostyka (rzadko, często wyłączane).
+---
+#### Jak wygląda żądanie HTTP (request)
+Przykład:
+
+```
+GET /api/products?search=apple HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0 ...
+Accept: application/json
+Cookie: session=abc123; theme=dark
+
+```
+
+**Elementy:**
+
+1. **Linia startowa**: metoda + ścieżka + wersja HTTP
+    
+2. **Nagłówki** (Headers): meta-informacje
+    
+3. **Pusta linia**
+    
+4. **Body** (opcjonalnie): dane (np. JSON w POST/PUT/PATCH)
+
+### Odpowiedzi HTTP
+
+- Ogólny format odpowiedzi HTTP (pola oddzielone spacjami):
+>HTTP-Version Status-Code Reason-Phrase \r\n 
+>HEADER1: VALUE1 \r\n 
+>HEADER2: VALUE2 \r\n 
+>... 
+>HEADERX: VALUEX \r\n 
+>\r\n 
+>BODY 
+>\r\n
+
+gdzie: 
+
+	- HTTP-Version - wersja protokołu HTTP, np. HTTP/1.0, HTTP/1.1, HTTP/2.0
+	- Status-Code - kod odpowiedzi, który informuje klienta, w jaki sposób żądanie zostało lub nie zostało obsłużone, kody odpowiedzi to liczby trzycyfrowe, gdzie pierwsza z nich określa grupę odpowiedzi:
+		- 1xx - to kody informacyjne
+		- 2xx - to kody powodzenia
+		- 3xx - to kody przekierowania
+		- 4xx - to kody błędu aplikacji klienta
+		- 5xx - to kody błędu serwera
+	- Reason-Phrase - wiadomość powiązana z danym kodem odpowiedzi
+	- HEADER1, HEADER2, ..., HEADERX - nagłówki HTTP, VALLUE1, VALUE2, ..., VALUEX - wartości konkretnych nagłówków
+	- BODY - opcjonalne ciało żądania
+---
+#### Kody odpowiedzi HTTP (status codes)
+Status to 3 cyfry, które mówią, co stało się z żądaniem.
+
+**Grupy:**
+
+- **1xx** Informacyjne (rzadko widoczne): np. 101 Switching Protocols
+    
+- **2xx** Sukces:
+    
+    - **200 OK** – wszystko OK
+        
+    - **201 Created** – utworzono zasób (np. po POST)
+        
+    - **204 No Content** – OK, ale bez treści (np. po DELETE)
+        
+- **3xx** Przekierowania:
+    
+    - **301 Moved Permanently** – stałe przekierowanie
+        
+    - **302 Found** – tymczasowe przekierowanie
+        
+    - **304 Not Modified** – użyj cache (brak zmian)
+        
+- **4xx** Błąd po stronie klienta (Twoje żądanie jest złe/nieuprawnione):
+    
+    - **400 Bad Request** – serwer nie rozumie żądania (zła składnia, brak danych, zły format)
+        
+    - **401 Unauthorized** – brak uwierzytelnienia (np. brak/niepoprawny token)
+        
+    - **403 Forbidden** – rozpoznano, ale brak dostępu
+        
+    - **404 Not Found** – zasób nie istnieje
+        
+    - **405 Method Not Allowed** – metoda niedozwolona dla endpointu
+        
+    - **429 Too Many Requests** – limit żądań (rate limit)
+        
+- **5xx** Błąd po stronie serwera:
+    
+    - **500 Internal Server Error** – ogólny błąd aplikacji/serwera
+        
+    - **502 Bad Gateway** – brama/proxy dostała złą odpowiedź od serwera „za nią” (np. od aplikacji/upstream)
+        
+    - **503 Service Unavailable** – usługa niedostępna (przeciążenie/maintenance)
+        
+    - **504 Gateway Timeout** – upstream nie odpowiedział na czas
+        
+
+**Co się dzieje gdy serwer zwraca…**
+
+- **400**: klient zwykle powinien poprawić żądanie (payload, format JSON, nagłówki).
+    
+- **404**: zły URL albo zasób nie istnieje.
+    
+- **500**: bug lub błąd po stronie aplikacji/serwera.
+    
+- **502/504**: problem po drodze (proxy/load balancer) albo z serwerem backendowym.
+
+### Dozwolone nagłówki HTTP
+
+- **Pola nagłówków ogólnych (General Header Fields)** – to kilka pól nagłówków, które mają ogólne zastosowanie zarówno dla komunikatów żądania, jak i odpowiedzi, ale nie dotyczą bezpośrednio przesyłanej treści (encji).
+    
+- **Pola nagłówków encji (Entity Header Fields)** – definiują metainformacje o treści encji (entity-body) albo, jeśli treść nie występuje, o zasobie wskazanym przez żądanie.
+    
+- **Pola nagłówków żądania (Request Header Fields)** – pozwalają klientowi przekazać serwerowi dodatkowe informacje o żądaniu oraz o samym kliencie.
+    
+- **Pola nagłówków odpowiedzi (Response Header Fields)** – pozwalają serwerowi przekazać dodatkowe informacje o odpowiedzi, których nie da się umieścić w linii statusu (Status-Line). Te pola dostarczają informacji o serwerze oraz o dalszym dostępie do zasobu wskazanego przez URI żądania (Request-URI).
+---
+#### Najważniejsze nagłówki (Headers)
+
+**Częste w żądaniu (Request):**
+
+- **Host** – domena (w HTTP/1.1 obowiązkowe)
+    
+- **User-Agent** – opis klienta (przeglądarka/aplikacja)
+    
+- **Accept** – jakie formaty klient akceptuje (np. `application/json`)
+    
+- **Content-Type** – format wysyłanych danych (np. `application/json`, `application/x-www-form-urlencoded`)
+    
+- **Authorization** – dane uwierzytelnienia (np. Bearer token)
+    
+- **Cookie** – ciasteczka wysyłane do serwera
+    
+
+**Częste w odpowiedzi (Response):**
+
+- **Content-Type** – format odpowiedzi
+    
+- **Set-Cookie** – ustawienie ciasteczka po stronie klienta
+    
+- **Location** – adres przekierowania (np. przy 301/302)
+    
+- **Cache-Control** – reguły cache
+    
+- **Server** – informacja o serwerze (czasem ukrywana)
+- **X-Forwarded-For** (nagłówek żądania) – wyjątkowo ciekawy nagłówek z potencjałem naruszania bezpieczeństwa
+- **Strict-Transport-Security** (nagłówek odpowiedzi) – jeden z nagłówków mogących wprost zwiększyć bezpieczeństwo aplikacji
+- **Referer**(nagłówek żądania) - jego wartością jest adres URL strony poprzednio odwiedzanej przez użytkownika (aby przeglądarka nie wysyłała nagłówków Referer* z naszej domeny, można użyć nagłówka odpowiedzi: Referrer-Policy: no-referrer)
+---
+#### Cookie i nagłówki cookie
+
+**Cookie (Request header)** – klient wysyła:
+
+`Cookie: session=abc123; lang=pl`
+
+**Set-Cookie (Response header)** – serwer ustawia:
+
+`Set-Cookie: session=abc123; HttpOnly; Secure; SameSite=Lax; Path=/`
+
+Znaczenie atrybutów:
+
+- **HttpOnly** – JS nie odczyta cookie (ochrona przed kradzieżą przez XSS)
+    
+- **Secure** – cookie tylko po HTTPS
+    
+- **SameSite** – ogranicza wysyłanie między stronami (ochrona przed CSRF)
+    
+- **Path/Domain** – gdzie cookie obowiązuje
+    
+- **Expires/Max-Age** – czas ważności
+---
+#### User-Agent
+
+Nagłówek **User-Agent** identyfikuje klienta (np. przeglądarkę, system).  
+Bywa używany do statystyk, dopasowania widoku, czasem do blokowania botów (nie jest to silne zabezpieczenie, bo łatwo go podrobić).
+
+### Przykłady żądań i odpowiedzi HTTP
+
+Żądanie: 
+```
+GET /index.html HTTP/1.1 
+HOST: 212.182.24.27
+```
+
+Odpowiedź:
+```
+HTTP/1.1 200 OK
+Date: Thu, 13 Apr 2017 14:25:38 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Last-Modified: Thu, 13 Apr 2017 13:57:13 GMT
+ETag: "2c39-54d0cb3af4405"
+Accept-Ranges: bytes
+Content-Length: 11321
+Vary: Accept-Encoding
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Apache2 Ubuntu Default Page: It works</title>
+	</head>
+	<body>
+	...
+	</body>
+</html>
+```
+---
+Żądanie:
+```
+TRACE / HTTP/1.1
+HOST: 212.182.24.27
+```
+
+Odpowiedź:
+```
+HTTP/1.1 405 Method Not Allowed
+Date: Thu, 13 Apr 2017 14:31:22 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Allow:
+Content-Length: 302
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+<title>405 Method Not Allowed</title>
+</head><body>
+<h1>Method Not Allowed</h1>
+<p>The requested method TRACE is not allowed for the URL /.</p>
+<hr>
+<address>Apache/2.4.18 (Ubuntu) Server at 212.182.24.27 Port 80</address>
+</body>
+</html>
+
+```
+---
+Żądanie:
+```
+OPTIONS /index.html HTTP/1.1
+HOST: 212.182.24.27
+```
+
+Odpowiedź:
+```
+HTTP/1.1 200 OK
+Date: Thu, 13 Apr 2017 14:52:31 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Allow: OPTIONS,GET,HEAD,POST
+Content-Length: 0
+Content-Type: text/html
+```
+---
+Żądanie:
+```
+HEAD /index.html HTTP/1.1
+HOST: 212.182.24.27
+```
+
+Odpowiedź:
+```
+HTTP/1.1 200 OK
+Date: Thu, 13 Apr 2017 14:53:06 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Last-Modified: Thu, 13 Apr 2017 13:57:13 GMT
+ETag: "2c39-54d0cb3af4405"
+Accept-Ranges: bytes
+Content-Length: 11321
+Vary: Accept-Encoding
+Content-Type: text/html
+```
+---
+### Kodowanie procentowe (kodowanie URL)
+Działa ono w prosty sposób: kod ASCII znaku & to szesnastkowo 26. W kodowaniu procentowym %26. Jeśli z kolei chcemy użyć spacji w URL, musimy ją zakodować jako %20 (lub jako +). Z tego powodu użycie znaku „plus” też musi być zakodowane (jako %2b), w przeciwnym wypadku oznaczałoby zakodowaną spację.
+
 ## Wprowadzenie do protokołu HTTP / testowania web aplikacji - ZADANIA
 ![[Pasted image 20260123173907.png]]
 
@@ -284,6 +634,9 @@ trzeba szukać jakichś różnic na przykład w długości
 ![[Pasted image 20260123201013.png]]
 
 ![[Pasted image 20260123201040.png]]
+
+## CROSS SITE SCRIPTING (XSS) - TEORIA
+
 
 ## CROSS SITE SCRIPTING (XSS) - ZADANIA
 ![[Pasted image 20260124140053.png]]
